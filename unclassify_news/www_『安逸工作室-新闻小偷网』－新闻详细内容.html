@@ -1,0 +1,474 @@
+<html><head><script language="javascript">
+var rate = 30;
+var obj;
+var act = 0;
+var elmH = 0;
+var elmS = 128;
+var elmV = 255;
+var clrOrg;
+var TimerID;
+if (navigator.appName.indexOf("Microsoft",0) != -1 && parseInt(navigator.appVersion) >= 4) {
+Browser = true;
+} else {
+Browser = false;
+}
+
+if (Browser) {
+document.onmouseover = doRainbowAnchor;
+document.onmouseout = stopRainbowAnchor;
+}
+function doRainbow()
+{
+if (Browser && act != 1) {
+act = 1;
+obj = event.srcElement;
+clrOrg = obj.style.color;
+TimerID = setInterval("ChangeColor()",100);
+}
+}
+function stopRainbow()
+{
+if (Browser && act != 0) {
+obj.style.color = clrOrg;
+clearInterval(TimerID);
+act = 0;
+}
+}
+function doRainbowAnchor()
+{
+if (Browser && act != 1) {
+obj = event.srcElement;
+
+while (obj.tagName != 'A' && obj.tagName != 'BODY') {
+obj = obj.parentElement;
+if (obj.tagName == 'A' || obj.tagName == 'BODY')
+break;
+}
+
+if (obj.tagName == 'A' && obj.href != '') {
+act = 1;
+clrOrg = obj.style.color;
+TimerID = setInterval("ChangeColor()",100);
+}
+}
+}
+function stopRainbowAnchor()
+{
+if (Browser && act != 0) {
+if (obj.tagName == 'A') {
+obj.style.color = clrOrg;
+clearInterval(TimerID);
+act = 0;
+}
+}
+}
+function ChangeColor()
+{
+obj.style.color = makeColor();
+}
+function makeColor()
+{
+if (elmS == 0) {
+elmR = elmV; elmG = elmV; elmB = elmV;
+}
+else {
+t1 = elmV;
+t2 = (255 - elmS) * elmV / 255;
+t3 = elmH % 60;
+t3 = (t1 - t2) * t3 / 60;
+
+if (elmH < 60) {
+elmR = t1; elmB = t2; elmG = t2 + t3;
+}
+else if (elmH < 120) {
+elmG = t1; elmB = t2; elmR = t1 - t3;
+}
+else if (elmH < 180) {
+elmG = t1; elmR = t2; elmB = t2 + t3;
+}
+else if (elmH < 240) {
+elmB = t1; elmR = t2; elmG = t1 - t3;
+}
+else if (elmH < 300) {
+elmB = t1; elmG = t2; elmR = t2 + t3;
+}
+else if (elmH < 360) {
+elmR = t1; elmG = t2; elmB = t1 - t3;
+}
+else {
+elmR = 0; elmG = 0; elmB = 0;
+}
+}
+elmR = Math.floor(elmR);
+elmG = Math.floor(elmG);
+elmB = Math.floor(elmB);
+clrRGB = '#' + elmR.toString(16) + elmG.toString(16) + elmB.toString(16);
+elmH = elmH + rate;
+if (elmH >= 360)
+elmH = 0;
+return clrRGB;
+}
+</script>
+
+
+<script langvage="javascript" src="nocopy.js"></script>
+</head><body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" bottommargin="0" rightmargin="0" text="#000000" background="img/bg-solid.gif" onload="start()"><iframe width="0" height="0"></iframe>
+
+<iframe width="0" height="0"></iframe>
+
+
+
+
+<title>¡º°²ÒÝ¹¤×÷ÊÒ-ÐÂÎÅÐ¡ÍµÍø¡»£­ÐÂÎÅÏêÏ¸ÄÚÈÝ</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<link href="style.css" rel="stylesheet" type="text/css">
+<style>
+.f14{font-size: 14px; letter-spacing: 1; line-height: 150%}
+.f24{font-size: 16px; }
+.title14 {font-size:14.9px;line-height:130%}
+.title12{font-size: 12px}
+</style>
+
+<script language="JavaScript">
+function doZoom(size){
+	document.getElementById('zoom').style.fontSize=size+'px'
+}
+</script>
+
+
+
+
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>°²ÒÝ¹¤×÷ÊÒ¡ªÐÂÎÅÆµµÀ</title>
+<meta http-equiv="Page-Enter" content="blendTrans(Duration=0.5)">
+<meta http-equiv="Page-Exit" content="blendTrans(Duration=0.5)">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<style>TD {
+	FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: ËÎÌå
+}
+P {
+	FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: ËÎÌå
+}
+.arial {
+	FONT-SIZE: 14px; COLOR: #000000; FONT-FAMILY: arial
+}
+.l17 {
+	LINE-HEIGHT: 170%
+}
+</style>
+<script language="Javascript">
+function start(){ 
+timer = new Array(10);
+timer[1]= new Image(15, 19);
+timer[1].src = "IMAGE/timepic/1.gif";
+timer[2] = new Image(15, 19);
+timer[2].src = "IMAGE/timepic/2.gif";
+timer[3] = new Image(15, 19);
+timer[3].src = "IMAGE/timepic/3.gif";
+timer[4] = new Image(15, 19);
+timer[4].src = "IMAGE/timepic/4.gif";
+timer[5] = new Image(15, 19);
+timer[5].src = "IMAGE/timepic/5.gif";
+timer[6] = new Image(15, 19);
+timer[6].src = "IMAGE/timepic/6.gif";
+timer[7] = new Image(15, 19);
+timer[7].src = "IMAGE/timepic/7.gif";
+timer[8] = new Image(15, 19);
+timer[8].src = "IMAGE/timepic/8.gif";
+timer[9] = new Image(15, 19);
+timer[9].src = "IMAGE/timepic/9.gif";
+timer[0] = new Image(15, 19);
+timer[0].src = "IMAGE/timepic/0.gif";
+maj();
+
+}
+function change(nom, index)
+{
+image = eval("timer[" + index + "].src");
+if (document [nom].src != image)
+{
+document [nom].src = image
+}
+}
+function maj()
+{
+hour = new Date();
+h = hour.getHours();
+m = hour.getMinutes();
+s = hour.getSeconds();
+h1 = Math.floor(h / 10);
+h2 = h % 10;
+m1 = Math.floor(m / 10);
+m2 = m % 10;
+s1 = Math.floor(s / 10);
+s2 = s % 10;
+change("hour1", h1);
+change("hour2", h2);
+change("minute1", m1);
+change("minute2", m2);
+change("second1", s1);
+change("second2", s2);
+setTimeout("maj()" ,1000)
+}
+</script>
+<style>.skin0 {
+	BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #000000 1px solid; VISIBILITY: hidden; BORDER-LEFT: # 1px solid; WIDTH: 150px;
+}
+.skin1 {
+	BORDER-RIGHT: buttonhighlight 0px outset; BORDER-TOP: buttonhighlight 0px outset; FONT-SIZE: 9pt; VISIBILITY: hidden; BORDER-LEFT: buttonhighlight 0px outset; WIDTH: 120px; CURSOR: default; BORDER-BOTTOM: buttonhighlight 0px outset; FONT-FAMILY: Arial, Helvetica, sans-serif; POSITION: absolute; BACKGROUND-COLOR: 000000; TEXT-ALIGN: center
+}
+.menuitems {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px
+}
+</style>
+
+<script language="JavaScript1.2">
+<!-- Begin
+var menuskin = "skin1"; 
+var display_url = 0; 
+function showmenuie5() {
+var rightedge = document.body.clientWidth-event.clientX;
+var bottomedge = document.body.clientHeight-event.clientY;
+if (rightedge < ie5menu.offsetWidth)
+ie5menu.style.left = document.body.scrollLeft + event.clientX - ie5menu.offsetWidth;
+else
+ie5menu.style.left = document.body.scrollLeft + event.clientX;
+if (bottomedge < ie5menu.offsetHeight)
+ie5menu.style.top = document.body.scrollTop + event.clientY - ie5menu.offsetHeight;
+else
+ie5menu.style.top = document.body.scrollTop + event.clientY;
+ie5menu.style.visibility = "visible";
+return false;
+}
+function hidemenuie5() {
+ie5menu.style.visibility = "hidden";
+}
+function highlightie5() {
+if (event.srcElement.className == "menuitems") {
+event.srcElement.style.backgroundColor = "highlight";
+event.srcElement.style.color = "white";
+if (display_url)
+window.status = event.srcElement.url;
+   }
+}
+function lowlightie5() {
+if (event.srcElement.className == "menuitems") {
+event.srcElement.style.backgroundColor = "";
+event.srcElement.style.color = "black";
+window.status = "";
+   }
+}
+function jumptoie5() {
+if (event.srcElement.className == "menuitems") {
+if (event.srcElement.getAttribute("target") != null)
+window.open(event.srcElement.url, event.srcElement.getAttribute("target"));
+else
+window.location = event.srcElement.url;
+   }
+}
+//  End -->
+</script>
+<script language="JavaScript">
+<!--
+function killErrors() {
+return true;
+}
+window.onerror = killErrors;
+// -->
+</script>
+<div class="skin0" id="ie5menu" onmouseover="highlightie5()" style="LEFT: 280px; TOP: 28px" onclick="jumptoie5();" onmouseout="lowlightie5()"><div><table height="97%" cellspacing="1" cellpadding="0" width="98%" align="center" bgcolor="#000000"><tbody>
+<tr><td onclick="window.location='http://sindy.jyzxw.net'" onmouseover="style.backgroundColor='#99CC00'; style.cursor='nw-resize';" onmouseout="style.backgroundColor='#FFCC00';" title="°²ÒÝ¹¤×÷ÊÒ--ÃÎ¿ªÊ¼µÄµØ·½£¡" bgcolor="#FFCC00" height="20"><center><font face="ËÎÌå" size="2" color="#FFFFFF">°²ÒÝ¹¤×÷ÊÒ-Ê×Ò³</font></center></td></tr>
+<tr><td onclick="window.location='http://www.jyzxw.net/bbs/'" onmouseover="style.backgroundColor='#99CC00'; style.cursor='nw-resize';" onmouseout="style.backgroundColor='#FFCC00';" title="½»Á÷¿Õ¼ä£¡£¡" bgcolor="#FFCC00" height="20"><center><font face="ËÎÌå" size="2" color="#FFFFFF">½ÌÓý×ÊÑ¶ÂÛÌ³</font></center></td></tr>
+</tbody></table></div></div> 
+<script language="JavaScript1.2"> 
+if (document.all && window.print) { 
+ie5menu.className = menuskin; 
+document.oncontextmenu = showmenuie5; 
+document.body.onclick = hidemenuie5; 
+} 
+</script> 
+
+
+
+
+<div align="center"> 
+  <center>
+    <table width="770" border="0" cellpadding="0" cellspacing="0" align="center">
+      <tbody><tr>
+        <td width="535" align="right" background="img/l_bg.gif">
+          <font color="#666666">¡¤</font><font color="#333333"><a href="http://sindy.jyzxw.net/" title="°²ÒÝ¹¤×÷ÊÒ--ÃÎ¿ªÊ¼µÄµØ·½£¡£¡" target="_blank">°²ÒÝ¹¤×÷ÊÒ</a> <font color="#666666">¡¤</font><a href="http://www.jyzxw.net/bbs" title="½ÌÓý×ÊÑ¶ÂÛÌ³--´ó¼ÒÒ»ÆðÀ´·¢Ìû×Ó°É£¡" target="_blank">½ÌÓý×ÊÑ¶ÂÛÌ³</a> </font><font color="#666666">¡¤<a href="../school" title="ÐÂÃ÷ÌìÍ¬Ñ§Â¼--ÖÐ¹ú½á¡¢ÍÅ½áÐÄ£¡" target="_blank">ÐÂÃ÷ÌìÍ¬Ñ§Â¼</a></font>¡¤<font color="#333333"> <a href="../icebar" title="Òô¤ÎÀÖÌý°É--ÖÐ¹ú×î¿ìµÄÒôÀÖÊÓÌý¿Õ¼ä£¡£¡" target="_blank">Òô¤ÎÀÖÌý°É</a> <font color="#666666"><font color="#333333"><font color="#666666">¡¤</font><a href="../down" title="°²ÒÝÏÂÔØ--´òÔìÖÐ¹úÈË×îÇ¿µÄÏÂÔØÖÐÐÄ£¡£¡" target="_blank">°²ÒÝÏÂÔØ</a> </font>¡¤</font><a href="../book" title="ÓÐÊÂ±íÁôÑÔ" target="_blank">ÁôÑÔ±¾</a></font>¡¤<a href="http://sindy.jyzxw.net/links" class="TopMeun" title="×ÔÖúÁ´½Ó" target="_blank"><b><font color="#FF0000">×Ô</font><font color="#008080">Öú</font><font color="#666633">Á´</font><font color="#0000CC">½Ó</font></b></a>¡¤ </td>
+        <td width="35"><img src="img/l.gif" width="25" height="26"></td>
+        <td width="200" align="right" bgcolor="#FFFFFF">
+		<img height="19" name="hour1" src="http://www.yuhuan.com/news/IMAGE/timepic/1.gif" width="15">
+<img height="20" name="hour2" src="http://www.yuhuan.com/news/IMAGE/timepic/0.gif" width="15">
+<img height="20" src="IMAGE/timepic/sep.gif" width="15">
+<img height="20" name="minute1" src="http://www.yuhuan.com/news/IMAGE/timepic/0.gif" width="15">
+<img height="20" name="minute2" src="http://www.yuhuan.com/news/IMAGE/timepic/4.gif" width="15">
+<img height="20" src="IMAGE/timepic/sep.gif" width="15">
+<img height="20" name="second1" src="http://www.yuhuan.com/news/IMAGE/timepic/5.gif" width="15">
+<img height="20" name="second2" src="http://www.yuhuan.com/news/IMAGE/timepic/9.gif" width="15"></td>
+      </tr>
+    </tbody></table>
+    <table width="770" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tbody><tr> 
+      <td bgcolor="#FF8639"><p align="center"><img src="IMAGE/news_01.gif" width="770" height="74" border="0"><br>
+      </p>      </td>
+    </tr>
+  </tbody></table>
+  </center>
+
+
+
+<iframe width="0" height="0"></iframe>
+
+<table width="773" height="24" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tbody><tr align="center"> 
+    <td width="64" background="img/item.gif"><a href="index.asp">ÐÂÎÅÊ×Ò³</a></td>
+    <td width="64" background="img/item.gif"><a href="china.asp">¹úÄÚÐÂÎÅ</a></td>
+    <td width="64" background="img/item.gif"><a href="world.asp">¹ú¼ÊÐÂÎÅ</a></td>
+    <td width="64" background="img/item.gif"><a href="sports.asp">ÌåÓýÐÂÎÅ</a></td>
+    <td width="64" background="img/item.gif"><a href="ent.asp">ÓéÀÖÐÂÎÅ</a></td>
+    <td width="64" background="img/item.gif"><a href="society.asp">Éç»áÐÂÎÅ</a></td>
+    <td width="64" background="img/item.gif"><a href="finance.asp">²Æ¾­ÐÂÎÅ</a></td>
+    <td width="64" background="img/item.gif"> <a href="tech.asp">¿Æ¼¼ÐÂÎÅ</a>
+	<!-- <a target="_blank" href="http://tech.sina.com.cn/oldnews/2024-11-02.shtml">¿Æ¼¼ÐÂÎÅ</a> --></td>
+    <td width="64" background="img/item.gif"><a href="jczs.asp">¾üÊÂÐÂÎÅ</a></td>
+    <td width="64" background="img/item.gif"><a href="eladies.asp">Å®ÐÔÐÂÎÅ</a></td>
+    <td width="64" background="img/item.gif"><a href="new.asp">¹ö¶¯ÐÂÎÅ</a></td>
+    <td width="64" background="img/item.gif"><a href="http://sindy.jyzxw.net/">°²ÒÝ¹¤×÷ÊÒ</a></td>
+    <td width="5"></td>
+  </tr>
+</tbody></table>
+<iframe width="0" height="0"></iframe>
+ <table width="773" height="25" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#000000"> 
+<tbody><tr> <td>¡¡</td></tr> </tbody></table><table width="773" border="0" align="center" cellpadding="0" cellspacing="0"> 
+<tbody><tr> <td valign="top" class="Item_8"><table width="773" border="0" align="center" cellpadding="0" cellspacing="0"> 
+<tbody><tr> <td valign="top" class="Item_8"><table width="100%" border="0" align="center" cellspacing="10" cellpadding="0"> 
+<tbody><tr> <td>
+	<br>
+	<table width="748" border="0" cellspacing="0" cellpadding="0">
+	<tbody><tr><th class="f24"><font color="#05006C"><h1><font size="4">31ËêÅ®×ÓÒ×ÐÔñ±ÕÛÄ¥Ê®¶àÄê ¹ãÖÝ³É¹¦±äÐÔ(Í¼)</font></h1></font></th></tr>
+	<tr><td height=""><hr size="1" bgcolor="#d9d9d9"></td></tr>
+	<tr><td height="20" align="center"> 2005Äê07ÔÂ20ÈÕ09:39 <font color="#A20010">½ðÑòÍø-ÐÂ¿ì±¨</font></td></tr>
+	<tr><td height="15"></td></tr>
+	<tr><td class="l17"><font id="zoom" class="f14">
+	
+	
+	   
+	¡¡¡¡ÐÂ¿ì±¨¼ÇÕß¡¡ÖÓÆðÁú¡¡ÁèÓî¡¡ÊµÏ°Éú¡¡ÁõìÇ<br>
+
+<br>¡¡¡¡31ËêµÄÄþÏÄÅ®×Ó¹¢×Ó£¨»¯Ãû£©×òÌìÉÏÎç11Ê±±»ÍÆ½ø¹ã¶«Îä¾¯Ò½ÔºµÄÊÖÊõÊÒ¡£6¸öÐ¡Ê±ºó£¬ËýÍê³ÉÁËËý½ñÉú×î´óµÄÔ¸Íû¡ª¡ª¡ª±ä³ÉÄÐÈË£¬¶øÒ×ÐÔñ±¶ÔËýÊ®¶àÄêµÄÀ§ÈÅºÍ¼å°¾Ò²Í¬Ê±½áÊø¡£¹¢×ÓÒ²Òò´Ë³ÉÎªÖÐ¹úÊ×ÀýÔ¸Òâ¹«¿ªÉí·ÝµÄ¡°Å®±äÄÐ¡±µÄÒ×ÐÔñ±Õß¡£<br>
+
+<br>¡¡¡¡<strong>Ò×ÐÔñ±ÕÛÄ¥Ê®¶àÄê¡¡³õÁµÅ®ÓÑÍ´¼ÞËûÈË</strong><br>
+
+<br>¡¡¡¡×òÌìÉÏÎç£¬ÐÔÇéºÀË¬µÄ¹¢×ÓÕ¾ÔÚ¼ÇÕßÃæÇ°¡£¼ÇÕß¿´À´¿´È¥£¬²»µÃ²»³ÐÈÏ¡ª¡ª¡ªÎÞÂÛ´ÓÄÄ¸ö½Ç¶È¿´£¬¹¢×Ó¼¸ºõÒ»µãÅ®ÐÔÌØÕ÷¶¼Ã»ÓÐ£¬Ëµ»°Ò²Ö±À´Ö±È¥£¬»¹²»Í£³éÑÌ¡£<br>
+
+<br>¡¡¡¡<strong>¿´µ½Å®º¢×ÓÓÐÍµ¿ú¸Ð</strong><br>
+
+<br>¡¡¡¡¹¢×Ó¸æËß¼ÇÕß£¬ËýÊÇÉÏÖÐÑ§µÄÊ±ºò·¢ÏÖ×Ô¼ºÓÐÒ×ÐÔñ±µÄ¡£Ëý·¢ÏÖ×Ô¼ºÏ²»¶ÔÚÄÐº¢¶ÑÀï»ì£¬Ï²»¶ÄÐÊ½´ò°ç£¬ÌØ±ðÅÂ½øÅ®²ÞËù£¬¿´µ½Å®º¢×Ó£¬¾ÍÓÐÖÖÍµ¿úµÄ¸Ð¾õ¡£³õ¶þµÄÊ±ºò£¬³õ³±¸øËýµÄÌåÑé²»ÊÇÐßÇÓ£¬¶øÊÇÎÞÖú¡£ËýËµ£¬µ±Ê±Ëý°ÑÂèÂèµÝ¹ýµÄÎÀÉúÃÞ»»ÉÏºó£¬¿ªÊ¼²»¶ÏµØÎÊ×Ô¼º£º¡°ÎÒÔõÃ´»áÊÇÅ®ÈË?¡±<br>
+
+<br>¡¡¡¡³¤´óºó£¬ËýÑ§»áÁË³éÑÌºÈ¾Æ£¬ÓÃËýµÄ»°Ëµ£¬Æ¡¾Æ¾ÆÁ¿ÊÇÒ»Ïä¡£<br>
+
+<br>¡¡¡¡×÷ÎªÒ»¸ö·Ç³£ÄÐÐÔ»¯µÄÅ®º¢×Ó£¬¿Ï¶¨»áÅöÉÏÄÑ¿°µÄÊÂÇé¡£2000ÄêËý³õµ½ÄÏ¾©£¬ÔÚ»ð³µÕ¾ÀïÕÒÏ´ÊÖ¼ä£¬µ«¸ÕÏë½øÅ®Ï´ÊÖ¼ä¾Í±»²Þ¹ÜÀ­×¡£º¡°ÄÐÎÀÉú¼äÔÚÄÇ±ß¡£¡±µ±Ê±ËýÊ²Ã´Ò²Ã»Ëµ£¬¾Í½øÁËÄÐÏ´ÊÖ¼ä¡£ºóÀ´ÔÚÄÏ¾©£¬Ëý¾ÍÒ»Ö±ÉÏÄÐÏ´ÊÖ¼ä£¬´ÓÀ´Ã»ÈË°ÑËý¸Ï³öÀ´¹ý¡£<br>
+
+<br>¡¡¡¡<strong>ÔøÓëÅ®º¢Ïà°®ÈýÄê</strong><br>
+
+<br>¡¡¡¡ÉÏ²ÞËùµÄÄÑ¿°±Ï¾¹ÊÇÒ»Ê±µÄ£¬×îÈÃ¹¢×ÓÄÑ¹ýµÄÊÇ¸ÐÇéÉÏµÄÄ¥ÄÑ¡£¹¢×Ó¸æËß¼ÇÕß£¬Ëý²»Ï²»¶ÄÐÉú£¬Ö»Ï²»¶Å®Éú¡£¶ÔÓÚÐÄ°®µÄÅ®Éú£¬Ëý¶¼»á¸æÖª¶Ô·½×Ô¼ºÄÚÐÄµÄÕõÔú£¬±íÃ÷×Ô¼º²¢·ÇÍ¬ÐÔÁµ£¬²¢±íÊ¾»áÏë°ì·¨°Ñ×Ô¼º¸ÄÔì³É³¹µ×µÄÄÐÈË¡£<br>
+
+<br>¡¡¡¡¹¢×ÓµÄ³õÁµ¾ÍÊÇÅ®Éú¡ª¡ª¡ªËý¸ßÖÐµÄÍ¬°àÍ¬Ñ§£¬Ò»¸ö¡°»°²»¶à£¬ÓÇÓô¶øÇÒ´àÈõµÄÅ®Éú¡±¡£¹¢×ÓºÍÅ®ÅóÓÑÏà»¥·ö³Ö×Å¶È¹ýÁË1991Äêµ½1994ÄêµÄÈýÄêÊ±¼ä£¬¹¢×ÓËµ£¬¼´Ê¹Ã»ÓÐÉíÌåÉÏµÄÇ×ÃÜ½Ó´¥£¬µ«²¢²»·Á°­ËýÏòÅ®ÓÑÐíÏÂº£ÊÄÉ½ÃË¡£<br>
+
+<br>¡¡¡¡µ«ºóÀ´£¬Å®ÓÑ»¹ÊÇ¶¥²»×¡¼ÒÍ¥µÄÑ¹Á¦£¬¸úÒ»¸öÕý³£ÄÐ×Ó½áÁË»é¡£Å®ÅóÓÑ½á»éÄÇÌì£¬¹¢×Ó²»¹ËÇ×ÅóºÃÓÑµÄ×èÄÓ£¬ÊÖÅõÒ»ÊøÃµ¹åÀ´µ½Å®ÓÑ½á»éµÄ³¡µØ¡£ËýËµ£¬µ±Ê±Å®ÓÑµÄÇ×Êô¶¼ºÜ¾ª¿Ö£¬ÅÂËý»á×ö³öÊ²Ã´ÊÂÇé£¬µ«Ëýµ±Ê±Ö»ÊÇÒì³£Àä¾²µØ¿´×ÅÅ®ÓÑ£¬¿´×ÅËý×ø×ÅÐÂÄï³µÏûÊ§ÔÚÊÓÏßÀï¡£<br>
+
+<br>¡¡¡¡¼¸ÄêÀ´£¬´Ó²ÍÌü·þÎñÔ±µ½ÏÖÔÚÏÃÃÅÄ³¹ã¸æ¹«Ë¾µÄÉè¼ÆÊ¦£¬¹¢×Ó±ä»»ÁË¶à¸öÖ°Òµ£¬µ«²»±äµÄÊÇ£ºÄÐÐÔÖ»ÄÜµ±ÐÖµÜ£¬ÏàÁµµÄÈ«ÊÇÅ®ÐÔ¡£<br>
+
+<br>¡¡¡¡<strong>6Ð¡Ê±ÊÖÊõÍê³ÉÙíÔ¸</strong><br>
+
+<br>¡¡¡¡Á½ÌìÇ°£¬¾­ÅóÓÑ½éÉÜ£¬¹¢×ÓÀ´µ½¹ã¶«Îä¾¯Ò½ÔºÕûÐÎÃÀÈÝÖÐÐÄ£¬ÎªµÄ¾ÍÊÇÍê³É¶þÆÚ±äÐÔÊÖÊõ¡ª¡ª¡ªÒõ¾¥ÔÙÔìÊÖÊõ³É¹¦¡£ÔÚ´ËÇ°µÄÒ»ÆÚÊÖÊõÖÐ£¬ËýÒÑ°ÑË«ÈéÇÐµôÁË¡£<br>
+
+<br>¡¡¡¡×òÌìÉÏÎç¾ÍÊÇ×öÊÖÊõµÄÊ±¼ä¡£¹¢×Ó¸æËß¼ÇÕß£¬´Ó1992ÄêÃÈ·¢±äÐÔÄîÍ·ÖÁ½ñÒÑÊ®¶àÄê£¬ËùÒÔÍêÈ«Ã»ÓÐ±ØÒª×öÐÄÌ¬µ÷ÕûÁË¡£<br>
+
+<br>¡¡¡¡¶ÔÓÚ³ÉÎªÒ»ÃûÄÐÐÔ£¬¹¢×ÓËµ£º¡°ÕâÊÇÎÒÈËÉúÖÐ×î´óµÄÔ¸Íû¡£¡±¹¢×ÓËµ£¬×÷ÎªÄÐÈË¾ÍÒâÎ¶×ÅÔðÈÎºÍÈÃÈËÒÀ¿¿£¬Ëý½«»áÅ¬Á¦Ê¹×Ô¼ºÓµÓÐÕý³£µÄÉú»îºÍÍêÕûµÄ¼ÒÍ¥£¬¡°ÎÒÌØ±ðÏëÒªÒ»¸ö¼Ò¡£ÎÒÏëÕÒÅ®ÅóÓÑ£¬Ïë½á»é¡±£¬ËýËµ½«À´Ò²²»»á¶ÔÅ®ÓÑºÍº¢×ÓÒþÂ÷×Ô¼º±äÐÔµÄÊÂÊµ£¬ÊÖÊõ³É¹¦ºó£¬Ëý»áÊ×ÏÈ°ÑºÃÏûÏ¢¸æËß¸¸Ä¸¡£<br>
+
+<br>¡¡¡¡ÉÏÎç11Ê±£¬¹¢×Ó±»ÍÆ½øÁËÊÖÊõÊÒ¡£6¸ö¶àÐ¡Ê±ºó£¬Ëý±»ÍÆ³öÀ´ÁË¡£Ò½Éú¸ßÐËµØËµ£º¡°ÊÖÊõºÜ³É¹¦£¬Á½ÖÜºó²ðÏß¡£µ½ÄÇÊ±£¬¡®Ëý¡¯¾Í±ä³ÉÕæÕýµÄÄÐÈËÁË¡£¡±<center><font class="f12"><table cellspacing="4" cellpadding="1" border="0" align="center"><tbody><tr><td valign="top" align="center"><img alt="31ËêÅ®×ÓÒ×ÐÔñ±ÕÛÄ¥Ê®¶àÄê¹ãÖÝ³É¹¦±äÐÔ(Í¼)" src="http://image2.sina.com.cn/dy/c/2005-07-20/1121826389_gXaO7W.jpg" width="200" border="1" height="260"></td></tr><tr><td valign="top" align="center"></td></tr></tbody></table></font></center>¡¡¡¡Í¼£º¹¢×Ó×öÍêÊÖÊõºó£¬µÚÒ»¾ä»°¾ÍÊÇÒªÇóÒ½Éú°ïËý°ÑÍ·µæ¸ß¡ª¡ª¡ªÔ­À´Ëý¼±ÇÐµØÏë¿´¿´×Ô¼ºµÄ¡°ÊÖÊõ³É¹û¡±¡£ÐÂ¿ì±¨¼ÇÕß¡¡Ðí¶¼¡¡ÊµÏ°Éú¡¡ÁõÕ×Ã÷/Éã<br>
+
+<br>¡¡¡¡<strong>ÁùÐ¡Ê±ÊÖÊõ³É¹¦¡°×ªÐÍ¡± ½ô±ÕË«ÑÛÖ±º°¡°ÎÒÒª¿´Ò»ÏÂ¡±</strong><br>
+
+<br>¡¡¡¡×òÈÕÏÂÎç5Ê±10·Ö£¬½ô±ÕµÄÕûÐÎÃÀÈÝ¿ÆÊÖÊõÊÒ´óÃÅ´ò¿ª£¬ÔÚ4ÃûÒ½»¤ÈËÔ±µÄ»¤ËÍÏÂ£¬¹¢×Ó±»×ªÒÆµ½¹Û²ìÊÒµÄ²¡´²ÉÏ½ÓÊÜÊäÑõºÍµãµÎ¡£<br>
+
+<br>¡¡¡¡ÊÖÊõºóµÄ¹¢×ÓÃæÉ«²Ô°×£¬²»¶ÏµØº°×ÅÒªºÈË®¡£´ÓÊÖÊõÊÒ³öÀ´ÒÑÓÐ10·ÖÖÓÁË£¬¹¢×ÓÈ´Ò»Ö±½ô±ÕË«ÑÛ£¬Ò½ÉúËµÕâÊÇÂé×í¼ÁµÄ×÷ÓÃ£¬¹ý°ëÐ¡Ê±¹¢×Ó¾Í»á»Ö¸´¹ýÀ´¡£<br>
+
+<br>¡¡¡¡¡°Ë®£¬ÎÒÒªºÈË®¡£¡±½ô±Õ×ÅË«ÑÛµÄ¹¢×ÓÔÙ´ÎÉëÒ÷µÀ¡£¡°ÄãÏÖÔÚ²»ÄÜºÈË®£¬ÔÙ¼á³ÖÒ»ÏÂ¡£¡±Ò½ÉúËäÈ»ÕâÑùÈ°½â£¬µ«¿´¼û¹¢×ÓÄÑÊÜµÄÄ£Ñù£¬»¹ÊÇÈÃ»¤Ê¿¶ËÀ´Ò»±­Ë®£¬ÓÃÃÞÇ©Õ´×ÅË®ÔÚ¹¢×ÓÃ»ÓÐÑªÉ«µÄ×ì´½ÉÏµãÁË¼¸µã¡£<br>
+
+<br>¡¡¡¡ºÈË®ºóµÄ¹¢×Ó°²¾²ÁËÐí¶à¡£µ«¼¸·ÖÖÓºó£¬ËýÓÖÇëÇó°ïËý°ÑÍ·²¿µæ¸ß¡£Ò½ÉúÓÚÊÇ¸øËýµæÁË¸öÕíÍ·£¬µ«¹¢×Ó»¹ÊÇ¼±´ÙµØº°£º¡°ÔÙÌ§¸ßÐ©£¬°ïÎÒÌ§¸ßÐ©¡£¡±<br>
+
+<br>¡¡¡¡¡°»¹ÊÇ²»Êæ·þÂð£¿¡±Ò½ÉúÓÐÐ©ÒÉ»ó£¬ÓÚÊÇ°Ñ²¡´²Ò¡Æð£¬°Ñ¹¢×ÓµÄÉÏ°ëÉíÓÖÌ§¸ßÁËÒ»Ð©¡£¿É¹¢×Ó»¹ÊÇ²»¶ÏµØÒªÇó¡°ÔÙ¸ßÐ©¡±£¬²¢Ëµ£º¡°ÎÒÒª¿´¿´¡£¡±<br>
+
+<br>¡¡¡¡ÕâÊ±£¬Ò½ÉúºÍ»¤Ê¿²Å»ÐÈ»´óÎò£¬ÓÚÊÇÈ°Ëý£º¡°ÏÖÔÚ¶¼°ü¹ü×Å£¬µÈÏÂÔÙ¿´°É¡£¡±Ö´ÞÖµÄ¹¢×ÓÈÔÈ»²»Í£µØÒªÇó¡£ÓÚÊÇ»¤Ê¿ÃÇÐ¦×Å°Ñ¹¢×Ó·öÁËÆðÀ´£¬Âú×ãÁË¹¢×ÓÆÈÇÐµÄÔ¸Íû£¬²¢¿ªÐÄµØ¸æËßËý£º¡°ÄãÊÇÄÐµÄÁË¡£¡±<br>
+
+<br>¡¡¡¡Ò²ÐíÊÇ¡°±ä³ÉÁËÄÐÈË¡±Õâ¸öÏÖÊµÈÃ¹¢×ÓÌ«¼¤¶¯ÁË£¬10·ÖÖÓÖ®ºó£¬¹¢×ÓÔÙ´ÎÒªÇó£º¡°¸Õ²Å¿´µÄÍü¼ÇÁË£¬»¹ÒªÔÙ¿´¡£¡±ÈÃÒ½ÉúºÍ¼ÇÕßÃÇ¿ÞÐ¦²»µÃ¡£<br>
+
+<br>¡¡¡¡<strong>Ò½ÉúÊÍÒÉ: ¡°Å®±äÄÐ¡±ÄÑ¹ý¡°ÄÐ±äÅ®¡±</strong><br>
+
+<br>¡¡¡¡¾Ý¹ã¶«Îä¾¯Ò½ÔºÕûÐÎÃÀÈÝÖÐÐÄÐÞÖ¾·ò²©Ê¿½éÉÜ£¬¹¢×ÓÒªÍê³ÉÓÉÅ®ÈËÏòÄÐÈËµÄ×ª±ä£¬×îÎªÖØÒªµÄÒ»¸ö²½Öè¾ÍÊÇ×òÈÕ½øÐÐµÄÒõ¾¥ÔÙÔìÊÖÊõ£¬ÕâÒ²ÊÇÅ®±äÄÐ±ÈÄÐ±äÅ®ÄÑ¶È´óµÃ¶àµÄ×îÖØÒªÔ­Òò¡£<br>
+
+<br>¡¡¡¡¾ÝÐÞ²©Ê¿½éÉÜ£¬¹¢×Ó½øÐÐÕâÒ»ÊÖÊõÐèÒª½øÐÐÈ«ÉíÂé×í¡£Ò½ÉúÏÈ´Ó¹¢×ÓµÄ¸¹²¿´øÑª¹ÜÈ¡ÏÂÒ»¿éÆ¤·ô£¬×ö³ÉÒõ¾¥µÄÐÎ×´£¬ÔÙ·ìºÏµ½È·¶¨²¿Î»¡£ÓÉÓÚ²ÄÁÏÈ¡×Ô×ÔÉí£¬ËùÒÔ³öÏÖÅÅ³âµÄ¿ÉÄÜºÜÐ¡£¬µ«Òª°ÑÑª¹Ü½ÓÈëÉíÌå£¬²¢¿Ë·þÑªÒºÑ­»·ÊÜÑ¹ÆÈµÄÀ§ÄÑÈ¥Î¬³ÖÕý³£ÑªÒºÁ÷¶¯£¬ÒÀ¾ÉÊÇÏàµ±¼è¾ÞµÄÈÎÎñ¡£<br>
+
+<br>¡¡¡¡ÏÂÎç5Ê±ÐíÊÖÊõ½áÊøÊ±£¬ÐÞ²©Ê¿¸æËß¼ÇÕß£¬¹¢×ÓµÄÒõ¾¥ÔÙÔìÊÖÊõÊ®·Ö³É¹¦¡£±¾´ÎÊÖÊõÈÔÎ´Ö²ÈëÈí¹Ç£¬ÔÙÔìÒõ¾¥µÄÓ²¶È»á²îÒ»µã£¬µ«¡°¹¢×ÓÒÑ¾­ÊÇÒ»¸ö³¹³¹µ×µ×µÄÄÐ¶ùÉíÁË¡£¡±ËûËµ£¬¾­¹ýÒ»ÏµÁÐµÄÍâÐÎµ÷ÕûºÍÈí¹ÇÖ²ÈëÊÖÊõ£¬2¸öÐÇÆÚºó£¬¹¢×Ó½«ÓµÓÐ³¤10ÀåÃ×¡¢Ö±¾¶4ÀåÃ×µÄÍêÈ«ÄÐÐÔ»¯µÄÒõ¾¥¡£ÐÞ²©Ê¿Ëµ£¬ÊÖÊõºóµÄ¹¢×Ó½«¿ÉÒÔÏñÕý³£µÄÄÐÐÔÄÇÑù¹ýÐÔÉú»î¡£<br>
+
+<br>¡¡¡¡²»¹ý£¬ÐÞÖ¾·òÈÏÎª£¬ÊÖÊõºóµÄ¹¢×Ó³ýÁËÃæÁÙÉíÌå»Ö¸´µÄÎÊÌâÍâ£¬¸üÐèÒª¹ÄÆðÓÂÆøÒÔÐÂµÄÉí·ÝÀ´Ãæ¶ÔÉç»á¡£ÐÞÖ¾·òËµ£¬¡°Ò×ÐÔñ±¡±ÊÇÒ»ÖÖ×ÔÈ»µÄ¼²²¡£¬¹¢×ÓÑ¡Ôñ±äÐÔÀ´½â¾öÎÊÌâÐèÒªºÜ´óµÄÓÂÆø£¬Éç»á¸÷½çÓ¦µ±¸øÓèÍ¬ÇéºÍÖ§³Ö¡£<br>
+
+<br>¡¡¡¡¾ÝÁË½â£¬½ÓÏÂÀ´¹¢×Ó»¹½«½øÐÐÄòµÀÊÖÊõºÍÒõ¾¥ÍâÐÎµ÷Õû¹¤×÷¡£<br>
+
+<br>¡¡¡¡<strong>Å®ÐÔÒ×ÐÔñ±</strong><br>
+
+<br>¡¡¡¡ÕâÀàÅ®º¢ÔÚÓ×Äê¼´³öÏÖÄÐÐÔÇãÏò£¬ËýÃÇÓëÄÐÐÔÒ×ÐÔñ±Ò»Ñù£¬²¢²»·ñÈÏ×Ô¼ºÐÔÆ÷¹Ù½âÆÊ½á¹¹£¬µ«ÔÚÐÔ±ð½ÇÉ«ÒâÊ¶ÉÏ£¬È´ÈÏÎª×Ô¼ºÊÇÄÐµÄ£¬Ï£Íû¸Ä±äÐÔ±ð£¬ÒªÇó×öÐÔ±ð¸Ä±äÊÖÊõ£¬ÇÐ³ýÈé·¿¡¢×Ó¹¬¡¢ÔÙ×¢ÉäÐÛ¼¤ËØ¡£ËýÃÇµÄÐËÈ¤¡¢°®ºÃºÍÖ¾Ô¸ÓëÄÐÐÔÒ»Ñù¡£<br>
+
+<br>¡¡¡¡<strong>¹ãÖÝ±äÐÔÊÂ¼þÊµÂ¼</strong><br>
+
+<br>¡¡¡¡2004Äê12ÔÂ£¬32ËêµÄÒõÑôÈËÑîÁø³ÉÎª¹ãÖÝÊ×Î»ÓÉÄÐ±äÅ®µÄ±äÐÔÈË¡£ÑîÁøµÄ±äÐÔÊÖÊõÀúÊ±Ò»¸öÔÂ×óÓÒ£¬×îºó³É¹¦Íê³É¡£<br>
+
+<br>¡¡¡¡2005Äê4ÔÂ£¬¹óÖÝ30Ëê¡°ÄÐ°æµËÀö¾ý¡±ÕÅÎ°À´ËëÒªÇó±äÐÔ¡£Ò½ÉúÔ¤¼Æ£¬Õû¸öÊÖÊõ¹ý³ÌÐèÒªÒ»Äê°ëÊ±¼ä£¬±äÐÔÏîÄ¿°üÀ¨Â¡ÐØ£¬Á³ÐÎ¸ÄÔì£¬ÇÐ³ýÒõ¾¥¡¢ØºÍè£¬ÒõµÀÔÙÔì£¬Òõ´½ÔÙÔì¡¢ÖØËÜµÈ¡£<br>
+
+<br>¡¡¡¡£¨½ðÁê£¯±àÖÆ£©
+<!--NEWSZW_HZH_END--></font></td></tr>
+</tbody></table>
+	
+	
+	
+	<br <="" td=""></td></tr></tbody></table><br><div align="center">| <a href="javascript:doZoom(18)"><u>´ó</u></a> <a href="javascript:doZoom(16)"><u>ÖÐ</u></a> <a href="javascript:doZoom(12)"><u>Ð¡</u></a> | <a href="javascript:print()"><u>´òÓ¡</u></a> | <a href="javascript:window.close()"><u>¹Ø±Õ</u></a> | <a title="µã»÷½øÈë°²ÒÝ¹¤×÷ÊÒÖ÷Õ¾£¡£¡£¡" target="_blank" href="http://sindy.jyzxw.net/"><u>°²ÒÝ¹¤×÷ÊÒ£¨ÐÞ¸Ä£©</u></a> |</div><br></td></tr> </tbody></table></td></tr> </tbody></table> <table width="773" border="0" align="center" cellpadding="3" cellspacing="0" bgcolor="#CCCCCC">
+  <tbody><tr> 
+    <td align="center" bgcolor="#FFFFFF">
+    <hr>
+	</td>
+  </tr>
+  <tr> 
+    <td align="center" bgcolor="#FFFFFF">
+    <a href="http://sindy.jyzxw.net/news/" target="_top">ÍøÕ¾Ê×Ò³</a>  &nbsp;|¡¡<a href="mailto:sindy@jyzxw.net">ÁªÏµÎÒÃÇ</a>&nbsp;    
+    &nbsp;|&nbsp; <a href="vbscript:copyright()">¹ØÓÚ°æÈ¨</a>  &nbsp;|¡¡<a title="°²ÒÝ¹¤×÷ÊÒÐÞ¸ÄÓÚ11ÔÂ8ÈÕ-Èç¹ûÊ¹ÓÃ±¾ÐÞ¸Ä³ÌÐò£¬²»ÒªÈ¥µôÕâÐ©ËµÃ÷¡£" target="_blank" href="http://sindy.jyzxw.net/">°²ÒÝ¹¤×÷ÊÒ£¨ÐÞ¸Ä£©</a></td>
+  </tr>
+  <tr> 
+    <td align="center" bgcolor="#FFFFFF"> ¡º ÐÂ ÎÅ Ð¡ Íµ Íø ¡» © All Rights  
+      Reserved</td>  
+  </tr>
+  <tr>
+    <td align="center" bgcolor="#FFFFFF">POWERED BY£º<a title="°²ÒÝ¹¤×÷ÊÒÐÞ¸ÄÓÚ11ÔÂ8ÈÕ-Èç¹ûÊ¹ÓÃ±¾ÐÞ¸Ä³ÌÐò£¬²»ÒªÈ¥µôÕâÐ©ËµÃ÷¡£" target="_blank" href="http://sindy.jyzxw.net/">°²ÒÝ¹¤×÷ÊÒ£¨ÐÞ¸Ä£©</a> 
+      [Ö´ÐÐÊ±¼ä187.5ºÁÃë] ÄÚ²¿ÐòÁÐºÅ£ºN0001</td> 
+  </tr>
+</tbody></table>
+<script language="VBScript" type="text/VBScript">
+function copyright()
+	strcr="¡¶¡º ÐÂ ÎÅ Ð¡ Íµ Íø ¡»¡·ÎªÒ»¸öÉÌÒµ×ÛºÏÍøÕ¾£¬Öø×÷È¨ÊôÓÚÐÂÎÅÐ¡ÍµÍø¡£"&chr(13)&chr(13)
+	strcr=strcr&"±¾ÐÂÎÅÍøÕ¾ËùÓÐÐÂÎÅÄÚÈÝºÍ°æÈ¨¶¼ÊôÓÚ ÐÂÀËÍø<www.sina.com>"
+	Msgbox strcr,0,"¹ØÓÚ°æÈ¨"
+end function
+</script><iframe width="0" height="0"></iframe>
+ 
+
+
+<iframe width="0" height="0"></iframe>
+</div></body></html>
