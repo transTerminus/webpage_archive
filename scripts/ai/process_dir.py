@@ -32,7 +32,12 @@ def process_file(file_path, prompt_template, gen_script_path, output_dir):
     if os.path.exists(output_path):
         logging.info(f"Skipping {file_path} - output file already exists: {output_path}")
         return True
-        
+    
+    # skip page.yml
+    if file_path.endswith('page.yml'):
+        logging.info(f"Skipping {file_path} - it's a page.yml file")
+        return True
+
     content = read_file_content(file_path)
     if content is None:
         return False
