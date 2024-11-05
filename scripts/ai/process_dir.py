@@ -43,6 +43,11 @@ def process_file(file_path, prompt_template, gen_script_path, output_dir):
     except KeyError as e:
         logging.error(f"Invalid placeholder in template: {e}")
         return False
+    
+    print("input_content:")
+    print("============================================")
+    print(input_content)
+    print("============================================")
 
     # Create temporary file for input
     with tempfile.NamedTemporaryFile(mode='w+', delete=False, suffix='.txt') as temp_input:
@@ -58,6 +63,9 @@ def process_file(file_path, prompt_template, gen_script_path, output_dir):
         
         subprocess.run(cmd, check=True)
         logging.info(f"Successfully processed {file_path} -> {output_path}")
+        print("============================================")
+        print(read_file_content(output_path))
+        print("============================================")
         return True
 
     except subprocess.CalledProcessError as e:
@@ -69,10 +77,10 @@ def process_file(file_path, prompt_template, gen_script_path, output_dir):
 
 def main():
     parser = argparse.ArgumentParser(description='Process files using a prompt template')
-    parser.add_argument('--src', required=True, help='Source directory containing input files')
-    parser.add_argument('--dst', required=True, help='Destination directory for output files')
-    parser.add_argument('--prompt', required=True, help='Path to prompt template file')
-    parser.add_argument('--gen', required=True, help='Path to gen.py script', default='scripts/ai/gen.py')
+    parser.add_argument('src', help='Source directory containing input files')
+    parser.add_argument('dst', help='Destination directory for output files')
+    parser.add_argument('prompt', help='Path to prompt template file')
+    parser.add_argument('--gen', help='Path to gen.py script', default='scripts/ai/gen.py')
     parser.add_argument('--pattern', default='*.*', help='File pattern to match (default: *.*)')
     
     global args
