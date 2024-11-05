@@ -49,8 +49,8 @@
         "[id=\"float-btn\"]",
         "[class=\"fl_words\"]",
         "[class=\"cmnt_fixed\"]",
-        "[class=\"s_card\"]" 
-
+        "[class=\"s_card\"]",
+        "[class=\"sw_c3\"]"
     ],
     "attributesToRemove": [
         "onclick",
