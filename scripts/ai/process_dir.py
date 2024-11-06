@@ -22,7 +22,7 @@ def read_file_content(file_path):
     logging.error(f"Failed to read {file_path} with any supported encoding")
     return None
 
-def process_file(file_path, prompt_template, gen_script_path, output_dir):
+def process_file(file_path, prompt_template, gen_script_path, output_dir, counter, total_files):
     """Process a single file using the provided prompt template."""
     # Create output path in dst directory
     rel_path = os.path.relpath(file_path, start=args.src)
@@ -53,6 +53,7 @@ def process_file(file_path, prompt_template, gen_script_path, output_dir):
     print("============================================")
     print(input_content)
     print("============================================")
+    print(f"Processed file {counter}/{total_files}")
 
     # Create temporary file for input
     with tempfile.NamedTemporaryFile(mode='w+', delete=False, suffix='.txt') as temp_input:
@@ -80,6 +81,17 @@ def process_file(file_path, prompt_template, gen_script_path, output_dir):
     finally:
         os.unlink(temp_input_path)
 
+def check_file_sizes(src_dir, pattern, max_size_kb=50):
+    """Check if any file in the directory exceeds the maximum size."""
+    src_path = Path(src_dir)
+    oversized_files = False
+    for file_path in src_path.rglob(pattern):
+        if file_path.is_file() and file_path.stat().st_size > max_size_kb * 1024:
+            logging.warning(f"File {file_path} exceeds {max_size_kb}KB")
+            print(f"File {file_path} size: {file_path.stat().st_size / 1024} KB")
+            oversized_files = True
+    return not oversized_files
+
 def main():
     parser = argparse.ArgumentParser(description='Process files using a prompt template')
     parser.add_argument('src', help='Source directory containing input files')
@@ -87,9 +99,15 @@ def main():
     parser.add_argument('prompt', help='Path to prompt template file')
     parser.add_argument('--gen', help='Path to gen.py script', default='scripts/ai/gen.py')
     parser.add_argument('--pattern', default='*.*', help='File pattern to match (default: *.*)')
-    
+    parser.add_argument('--skip-size-check', action='store_true', help='Skip file size check')
+
     global args
     args = parser.parse_args()
+
+    # Check file sizes before processing, unless skipping is specified
+    if not check_file_sizes(args.src, args.pattern) and not args.skip_size_check:
+        logging.error("One or more files exceed the maximum allowed. Exiting.")
+        exit(1)
 
     # Read prompt template
     try:
@@ -104,9 +122,15 @@ def main():
 
     # Process all files in source directory
     src_path = Path(args.src)
-    for file_path in src_path.rglob(args.pattern):
+    files = list(src_path.rglob(args.pattern))
+    total_files = len(files)
+    counter = 0
+
+    for file_path in files:
         if file_path.is_file():
-            process_file(str(file_path), prompt_template, args.gen, args.dst)
+            counter += 1
+            process_file(str(file_path), prompt_template, args.gen, args.dst, counter, total_files)
+            print(f"Processed {counter}/{total_files} files")
 
 if __name__ == "__main__":
     main()

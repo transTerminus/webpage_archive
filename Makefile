@@ -21,3 +21,9 @@ sina.cn:
 .PHONY: thepaper.cn
 thepaper.cn:
 	python scripts/config/new_config.py raw/thepaper.cn/results.json raw/thepaper.cn/page.yml
+	python scripts/config/add_meta.py raw/thepaper.cn/page.yml
+
+	python scripts/batch.py  raw/thepaper.cn/ cleaned/thepaper.cn/ ./scripts/cleaner/clean_cheerio.js HTML_CLEANER_CONFIG=./scripts/cleaner/configs/thepaper.cn.json 
+	python scripts/batch.py  cleaned/thepaper.cn/ markdown/thepaper.cn/ scripts/markdown/html2md.js
+
+	python scripts/ai/process_dir.py markdown/thepaper.cn/ ready/thepaper.cn/ scripts/ai/prompt/clean.template
