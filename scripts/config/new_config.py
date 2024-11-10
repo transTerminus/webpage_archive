@@ -41,13 +41,24 @@ def main():
             data = json.load(f)
         
         # Parse into desired format
-        results = parse_results(data)
+        new_results = parse_results(data)
         
-        # Write YAML output
+        # Try to load existing YAML file
+        existing_results = {}
+        try:
+            with open(args.output, 'r', encoding='utf-8') as f:
+                existing_results = yaml.safe_load(f) or {}
+        except FileNotFoundError:
+            pass  # File doesn't exist yet, start with empty dict
+        
+        # Merge existing and new results
+        existing_results.update(new_results)
+        
+        # Write merged YAML output
         with open(args.output, 'w', encoding='utf-8') as f:
-            yaml.dump(results, f, allow_unicode=True, sort_keys=False)
+            yaml.dump(existing_results, f, allow_unicode=True, sort_keys=False)
             
-        print(f"Successfully converted {args.input} to {args.output}")
+        print(f"Successfully merged {args.input} into {args.output}")
         
     except FileNotFoundError as e:
         print(f"Error: File not found - {e.filename}", file=sys.stderr)
