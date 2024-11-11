@@ -11,7 +11,7 @@ def parse_results(json_data):
     # Parse each entry in the success array
     for entry in json_data["success"]:
         url = entry["url"]
-        filename = entry["path"].split('workspace_news/')[-1]  # Get filename part after workspace_news/
+        filename = entry["path"].split('/')[-1]  # Get filename part after workspace_news/
         md5 = entry["md5"]
         title = entry["title"]
         snippet = entry.get("snippet", "")  # Use get() to handle optional snippet
@@ -60,12 +60,6 @@ def main():
             
         print(f"Successfully merged {args.input} into {args.output}")
         
-    except FileNotFoundError as e:
-        print(f"Error: File not found - {e.filename}", file=sys.stderr)
-        sys.exit(1)
-    except json.JSONDecodeError:
-        print(f"Error: Invalid JSON format in {args.input}", file=sys.stderr)
-        sys.exit(1)
     except Exception as e:
         print(f"Error: {str(e)}", file=sys.stderr)
         sys.exit(1)
