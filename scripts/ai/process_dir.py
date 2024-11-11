@@ -86,7 +86,7 @@ def check_file_sizes(src_dir, pattern, max_size_kb=50):
     src_path = Path(src_dir)
     oversized_files = False
     for file_path in src_path.rglob(pattern):
-        if file_path.is_file() and file_path.stat().st_size > max_size_kb * 1024:
+        if file_path.is_file() and file_path.stat().st_size > max_size_kb * 1024 and not str(file_path).endswith('.yml'):
             logging.warning(f"File {file_path} exceeds {max_size_kb}KB")
             print(f"File {file_path} size: {file_path.stat().st_size / 1024} KB")
             oversized_files = True

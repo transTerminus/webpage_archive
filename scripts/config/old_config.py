@@ -10,20 +10,33 @@ def parse_results(json_data):
     
     # Parse each entry in the success array
     for entry in json_data["success"]:
-        url = entry[0]
-        filename = entry[1].split('workspace_news/')[-1]  # Get filename part after workspace_news/
-        md5 = entry[2]
-        
-        # Extract title from filename (everything after _ and before .html)
-        title = re.search(r'_(.+?)\.html', filename).group(1)
-        
-        # Store as dictionary
-        results[filename] = {
-            "link": url,
-            "md5": md5,
-            "title": title,
-            "snippet": ""  # Empty snippet as not provided in input
-        }
+        try:
+            # Handle both dictionary and list formats
+            if isinstance(entry, dict):
+                url = entry["url"]
+                filename = entry["path"].split('workspace_news/')[-1]
+                md5 = entry["md5"]
+                title = entry.get("title", "")
+                snippet = entry.get("snippet", "")
+            else:  # List format
+                url = entry[0]
+                filename = entry[1].split('workspace_news/')[-1]
+                md5 = entry[2]
+                # Extract title from filename (everything after _ and before .html)
+                title = re.search(r'_(.+?)\.html', filename)
+                title = title.group(1) if title else ""
+                snippet = ""
+            
+            # Store as dictionary
+            results[filename] = {
+                "link": url,
+                "md5": md5,
+                "title": title,
+                "snippet": snippet
+            }
+        except (IndexError, KeyError) as e:
+            print(f"Warning: Skipping malformed entry: {entry}")
+            continue
     
     return results
 
@@ -42,13 +55,24 @@ def main():
             data = json.load(f)
         
         # Parse into desired format
-        results = parse_results(data)
+        new_results = parse_results(data)
         
-        # Write YAML output
+        # Try to load existing YAML file
+        existing_results = {}
+        try:
+            with open(args.output, 'r', encoding='utf-8') as f:
+                existing_results = yaml.safe_load(f) or {}
+        except FileNotFoundError:
+            pass  # File doesn't exist yet, start with empty dict
+        
+        # Merge existing and new results
+        existing_results.update(new_results)
+        
+        # Write merged YAML output
         with open(args.output, 'w', encoding='utf-8') as f:
-            yaml.dump(results, f, allow_unicode=True, sort_keys=False)
+            yaml.dump(existing_results, f, allow_unicode=True, sort_keys=False)
             
-        print(f"Successfully converted {args.input} to {args.output}")
+        print(f"Successfully merged {args.input} into {args.output}")
         
     except FileNotFoundError as e:
         print(f"Error: File not found - {e.filename}", file=sys.stderr)

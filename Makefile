@@ -1,7 +1,7 @@
 .PHONY: ifeng.com
 ifeng.com:
 	python scripts/config/old_config.py raw/ifeng.com/results.json raw/ifeng.com/page.yml
-	python scripts/config/old_config.py raw/ifeng.com/results1.json raw/ifeng.com/page.yml
+	python scripts/config/new_config.py raw/ifeng.com/results1.json raw/ifeng.com/page.yml
 	python scripts/config/add_meta.py raw/ifeng.com/page.yml
 
 	python scripts/batch.py  raw/ifeng.com/ cleaned/ifeng.com/ ./scripts/cleaner/clean_cheerio.js HTML_CLEANER_CONFIG=./scripts/cleaner/configs/ifeng.com.json 
@@ -12,7 +12,7 @@ ifeng.com:
 .PHONY: sina.cn
 sina.cn:
 	python scripts/config/old_config.py raw/sina.cn/results.json raw/sina.cn/page.yml
-	python scripts/config/old_config.py raw/sina.cn/results1.json raw/sina.cn/page.yml
+	python scripts/config/new_config.py raw/sina.cn/results1.json raw/sina.cn/page.yml
 	python scripts/config/add_meta.py raw/sina.cn/page.yml
 
 	python scripts/batch.py  raw/sina.cn/ cleaned/sina.cn/ ./scripts/cleaner/clean_cheerio.js HTML_CLEANER_CONFIG=./scripts/cleaner/configs/sina.cn.json 
@@ -41,3 +41,13 @@ sohu.com:
 	python scripts/batch.py  cleaned/sohu.com/ markdown/sohu.com/ scripts/markdown/html2md.js
 
 	python scripts/ai/process_dir.py markdown/sohu.com/ ready/sohu.com/ scripts/ai/prompt/clean.template
+
+.PHONY: chinanews.com
+chinanews.com:
+	python scripts/config/new_config.py raw/chinanews.com/results.json raw/chinanews.com/page.yml
+	python scripts/config/add_meta.py raw/chinanews.com/page.yml
+
+	python scripts/batch.py  raw/chinanews.com/ cleaned/chinanews.com/ ./scripts/cleaner/clean_cheerio.js HTML_CLEANER_CONFIG=./scripts/cleaner/configs/chinanews.com.json 
+	python scripts/batch.py  cleaned/chinanews.com/ markdown/chinanews.com/ scripts/markdown/html2md.js
+
+	python scripts/ai/process_dir.py markdown/chinanews.com/ ready/chinanews.com/ scripts/ai/prompt/clean.template
