@@ -26,6 +26,10 @@ raw/163.com/page.yml:
 	python scripts/config/new_config.py raw/163.com/results.json raw/163.com/page.yml
 	python scripts/config/add_meta.py raw/163.com/page.yml
 
+raw/news.qq.com/page.yml:
+	python scripts/config/new_config.py raw/news.qq.com/results.json raw/news.qq.com/page.yml
+	python scripts/config/add_meta.py raw/news.qq.com/page.yml
+
 .PHONY: ifeng.com
 ifeng.com: raw/ifeng.com/page.yml
 	python scripts/batch.py  raw/ifeng.com/ cleaned/ifeng.com/ ./scripts/cleaner/clean_cheerio.js HTML_CLEANER_CONFIG=./scripts/cleaner/configs/ifeng.com.json 
@@ -72,7 +76,15 @@ chinanews.com: raw/chinanews.com/page.yml
 
 	python scripts/ai/process_dir.py markdown/163.com/ ready/163.com/ scripts/ai/prompt/clean.template
 
-build_page: raw/ifeng.com/page.yml raw/sina.cn/page.yml raw/thepaper.cn/page.yml raw/sohu.com/page.yml raw/chinanews.com/page.yml raw/163.com/page.yml
+.PHONY: news.qq.com
+news.qq.com: raw/news.qq.com/page.yml
+
+	python scripts/batch.py  raw/news.qq.com/ cleaned/news.qq.com/ ./scripts/cleaner/clean_cheerio.js HTML_CLEANER_CONFIG=./scripts/cleaner/configs/news.qq.com.json 
+	python scripts/batch.py  cleaned/news.qq.com/ markdown/news.qq.com/ scripts/markdown/html2md.js
+
+	python scripts/ai/process_dir.py markdown/news.qq.com/ ready/news.qq.com/ scripts/ai/prompt/clean.template
+
+build_page: raw/ifeng.com/page.yml raw/sina.cn/page.yml raw/thepaper.cn/page.yml raw/sohu.com/page.yml raw/chinanews.com/page.yml raw/163.com/page.yml raw/news.qq.com/page.yml 
 
 .PHONY: clean_page
 clean_page:
