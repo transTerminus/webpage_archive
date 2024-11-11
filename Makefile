@@ -30,3 +30,14 @@ thepaper.cn:
 	python scripts/batch.py  cleaned/thepaper.cn/ markdown/thepaper.cn/ scripts/markdown/html2md.js
 
 	python scripts/ai/process_dir.py markdown/thepaper.cn/ ready/thepaper.cn/ scripts/ai/prompt/clean.template
+
+.PHONY: sohu.com
+sohu.com:
+	python scripts/config/new_config.py raw/sohu.com/results.json raw/sohu.com/page.yml
+	python scripts/config/new_config.py raw/sohu.com/results1.json raw/sohu.com/page.yml
+	python scripts/config/add_meta.py raw/sohu.com/page.yml
+
+	python scripts/batch.py  raw/sohu.com/ cleaned/sohu.com/ ./scripts/cleaner/clean_cheerio.js HTML_CLEANER_CONFIG=./scripts/cleaner/configs/sohu.com.json 
+	python scripts/batch.py  cleaned/sohu.com/ markdown/sohu.com/ scripts/markdown/html2md.js
+
+	python scripts/ai/process_dir.py markdown/sohu.com/ ready/sohu.com/ scripts/ai/prompt/clean.template
