@@ -94,7 +94,7 @@ unclassify_news: raw/unclassify_news/page.yml
 	python scripts/batch.py  raw/unclassify_news/ cleaned/unclassify_news/ ./scripts/cleaner/clean_cheerio.js HTML_CLEANER_CONFIG=./scripts/cleaner/configs/unclassify_news.json 
 	python scripts/batch.py  cleaned/unclassify_news/ markdown/unclassify_news/ scripts/markdown/html2md.js
 
-	python scripts/ai/process_dir.py markdown/unclassify_news/ ready/unclassify_news/ scripts/ai/prompt/clean.template
+	python scripts/ai/process_dir.py markdown/unclassify_news/ ready/unclassify_news/ scripts/ai/prompt/clean.template --skip-size-check
 
 build_page: raw/ifeng.com/page.yml raw/sina.cn/page.yml raw/thepaper.cn/page.yml raw/sohu.com/page.yml raw/chinanews.com/page.yml raw/163.com/page.yml raw/news.qq.com/page.yml raw/unclassify_news/page.yml
 
