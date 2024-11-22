@@ -1,0 +1,877 @@
+{
+  "success": [
+    {
+      "url": "http://2010.sohu.com/20100712/n273439288.shtml",
+      "path": ".github/downloader/webpage_archive/raw/sohu.com1/2010_\u76f4\u51fb\uff1a\u56db\u7403\u8ff7\u5165\u4fb5\u51b3\u8d5b\u573a\u5409\u7c73\u8df3\u642d\u6863\u5929\u9e45\u88c5\u4f2a\u5a18_-_\u641c\u72d0.html",
+      "md5": "5c37bd6e394663a01653d4f45aa2c630",
+      "title": "\u76f4\u51fb\uff1a\u56db\u7403\u8ff7\u5165\u4fb5\u51b3\u8d5b\u573a\u5409\u7c73\u8df3\u642d\u6863\u5929\u9e45\u88c5\u4f2a\u5a18 - \u641c\u72d0",
+      "snippet": "Jul 12, 2010 \u2014 \u4e16\u754c\u676f|\u5357\u975e\u4e16\u754c\u676f|2010\u5357\u975e\u4e16\u754c\u676f > \u641c\u72d0\u524d\u65b9\u62a5\u9053\u56e2 > \u641c\u72d0\u5357\u975e\u76f4\u51fb\u52a8\u6001 ... \u4f2a\u5a18\u201d\u3002 \u4e0e\u770b\u53f0\u4e0a\u7684\u76f8\u5bf9\u5b89\u9759\u7684\u7403\u8ff7\u76f8\u6bd4\uff0c\u51e0\u4f4d\u7279\u6b8a\u7684\u8d5b\u573a\u6765\u5ba2\u7528\u66f4\u76f4\u63a5\u7684 ..."
+    },
+    {
+      "url": "http://arts.cul.sohu.com/20130711/n381279823.shtml",
+      "path": ".github/downloader/webpage_archive/raw/sohu.com1/arts_\u5f02\u88c5\u7656\u8005\u53d8\u8138\u79c0\uff1a\u4e00\u534a\u662f\u7537\u4eba\u4e00\u534a\u662f\u5973\u4eba-\u641c\u72d0\u6587\u5316\u9891\u9053_-_\u641c\u72d0\u827a\u672f.html",
+      "md5": "6fe2b4698a44cb9808347f269d0fe553",
+      "title": "\u5f02\u88c5\u7656\u8005\u53d8\u8138\u79c0\uff1a\u4e00\u534a\u662f\u7537\u4eba\u4e00\u534a\u662f\u5973\u4eba-\u641c\u72d0\u6587\u5316\u9891\u9053 - \u641c\u72d0\u827a\u672f",
+      "snippet": "\u5f02\u88c5\u7656\u8005\u53d8\u8138\u79c0\uff1a\u4e00\u534a\u662f\u7537\u4eba\u4e00\u534a\u662f\u5973\u4eba. \u6b63\u6587; \u6211\u6765\u8bf4\u4e24\u53e5( \u4eba\u53c2\u4e0e). \u626b\u63cf\u5230\u624b\u673a. \u5173\u95ed. 2013\u5e7407\u670811\u65e511:51. \u6765\u6e90\uff1a\u73af\u7403\u7f51 ... \u8bf4\u5230\u8d77\u6e90\uff0c\u4ed6\u8bf4\u662f\u6765\u81ea\u4e00\u6b21\u805a\u4f1a\uff0c\u90a3\u6b21\u805a\u4f1a\u7684 ..."
+    }
+  ],
+  "failed": [],
+  "skipped": [
+    [
+      "http://020xlx.com/b/10875.html",
+      "Path does not match pattern '.*sohu.com.*'"
+    ],
+    [
+      "http://086168.com/dongman/3270.html",
+      "Path does not match pattern '.*sohu.com.*'"
+    ],
+    [
+      "http://0916001.com/forum.php?/20241023215537/BWcBJVV2_210509465.html",
+      "is_related='false'"
+    ],
+    [
+      "http://1.189.39.5:2222/KCMS/detail/detail.aspx?filename=XCYS200316046&dbcode=CJFT&dbname=CJFT7911",
+      "Path does not match pattern '.*sohu.com.*'"
+    ],
+    [
+      "http://1.189.39.5:2222/kcms/detail/detail.aspx?dbcode=CJFV&dbname=CJFV2009&filename=JYYB200903010",
+      "is_related='notsure'"
+    ],
+    [
+      "http://100md.com/html/paper/1002-574X/2007/06/03.htm",
+      "Path does not match pattern '.*sohu.com.*'"
+    ],
+    [
+      "http://101.35.175.73/index.php/category/list/5/tags/94/city/44",
+      "is_related='notsure'"
+    ],
+    [
+      "http://103.102.4.170:1688/book/56152/",
+      "Path does not match pattern '.*sohu.com.*'"
+    ],
+    [
+      "http://103.102.4.170:1688/book/60014/",
+      "is_related='notsure'"
+    ],
+    [
+      "http://103.102.4.170:1688/book/7986/",
+      "is_related='notsure'"
+    ],
+    [
+      "http://104.131.159.229/forum.php?mod=viewthread&tid=24497",
+      "is_related='notsure'"
+    ],
+    [
+      "http://104.238.221.190:8000/search-%E4%BC%AA%E8%A1%97+%E9%9C%B2%E5%87%BA-0-0-1.html",
+      "is_related='false'"
+    ],
+    [
+      "http://106.120.125.13/docs/2018-11/20181107105252471822.pdf",
+      "is_related='false'"
+    ],
+    [
+      "http://106.14.162.91/",
+      "is_related='false'"
+    ],
+    [
+      "http://106.37.81.211:8082/images/sjsimages/pdf/qk/fjsfdxxb-zx/fjsf2003/0306pdf/030614.pdf",
+      "Path does not match pattern '.*sohu.com.*'"
+    ],
+    [
+      "http://106.37.81.211:8082/wxzy/down/sjs_journal/12700544.html",
+      "Path does not match pattern '.*sohu.com.*'"
+    ],
+    [
+      "http://106.37.81.211:8082/wxzy/down/sjs_journal/22257513.html",
+      "Path does not match pattern '.*sohu.com.*'"
+    ],
+    [
+      "http://106.37.81.211:8082/wxzy/down/sjs_journal/27556955.html",
+      "is_related='notsure'"
+    ],
+    [
+      "http://106.37.81.211:8082/wxzy/down/sjs_journal/28523792.html",
+      "is_related='false'"
+    ],
+    [
+      "http://106.37.81.211:8082/wxzy/down/sjs_journal/8470092.html",
+      "Path does not match pattern '.*sohu.com.*'"
+    ],
+    [
+      "http://106.37.81.211:8082/wxzyD--sjs_degree-4772070.html",
+      "Path does not match pattern '.*sohu.com.*'"
+    ],
+    [
+      "http://106.75.237.152:18081/m/24935/",
+      "Path does not match pattern '.*sohu.com.*'"
+    ],
+    [
+      "http://106.75.237.152:18081/m/3219/",
+      "is_related='notsure'"
+    ],
+    [
+      "http://107.181.228.52:3456/modules/article/reader.php?aid=24049&cid=879353",
+      "Path does not match pattern '.*sohu.com.*'"
+    ],
+    [
+      "http://111.180.202.218:1314/chapter/20286/1306379",
+      "Path does not match pattern '.*sohu.com.*'"
+    ],
+    [
+      "http://111.205.231.68/docs/2018-11/20181114211112657750.caj",
+      "Path does not match pattern '.*sohu.com.*'"
+    ],
+    [
+      "http://1117111719861117.blog.163.com/blog/static/43367120077230445618",
+      "is_related='notsure'"
+    ],
+    [
+      "http://113.194.172.203:4480/ILASOPAC/NTRdrBookRetrInfo.do;jsessionid=D76A9BFEA405C8009628905E21902813?recno=900439318&random=-1986972922&libid=",
+      "Path does not match pattern '.*sohu.com.*'"
+    ],
+    [
+      "http://119.23.232.167:8888/SRManager/upload/20230731153151529/%E2%80%9C%E5%89%8D%E6%B2%BF%E7%94%9F%E7%89%A9%E6%8A%80%E6%9C%AF%E2%80%9D%E9%87%8D%E7%82%B9%E4%B8%93%E9%A1%B92023%E5%B9%B4%E5%BA%A6%E9%A1%B9%E7%9B%AE%E7%94%B3%E6%8A%A5%E6%8C%87%E5%8D%97.pdf",
+      "is_related='false'"
+    ],
+    [
+      "http://120.224.26.17:801/uploads/ueditor/file/20230710/1688973569856659.pdf",
+      "is_related='false'"
+    ],
+    [
+      "http://124.221.1.9/%E5%BA%9F%E5%9C%9F.txt",
+      "is_related='notsure'"
+    ],
+    [
+      "http://125.74.7.179/upload/article/43ac0808-ac04-46f3-a8be-46b0546d8bba.pdf",
+      "Path does not match pattern '.*sohu.com.*'"
+    ],
+    [
+      "http://132.145.55.228/bbs/archiver/tid-97821.html",
+      "Path does not match pattern '.*sohu.com.*'"
+    ],
+    [
+      "http://146.19.24.47:8000/hash/fcfe7469a20ed8f18b71fcffc334f23455341875.html",
+      "is_related='false'"
+    ],
+    [
+      "http://153.120.7.169/miniup/?mode=dl&id=12063",
+      "is_related='notsure'"
+    ],
+    [
+      "http://156opk6.cnru-online.com/transgender-health-program/faq",
+      "Path does not match pattern '.*sohu.com.*'"
+    ],
+    [
+      "http://162.252.9.11/bbs/viewthread.php?tid=10952365&&authorid=11058989&styleid=24",
+      "Path does not match pattern '.*sohu.com.*'"
+    ],
+    [
+      "http://162.252.9.8/forum/redirect.php?fid=187&tid=10958435&goto=nextnewset&styleid=24",
+      "Link already processed"
+    ],
+    [
+      "http://16av.sbs/forum.php?mod=viewthread&tid=23690",
+      "is_related='notsure'"
+    ],
+    [
+      "http://16av.sbs/thread-23690-1-1.html",
+      "Path does not match pattern '.*sohu.com.*'"
+    ],
+    [
+      "http://180.101.234.24:8011/webportal/attachment/download.html?id=75c40a5f-5619-421d-b1f7-6d8d02559b6f",
+      "is_related='false'"
+    ],
+    [
+      "http://18120.com/xinli/rcxl/nrxl/200803/123107.shtml",
+      "Path does not match pattern '.*sohu.com.*'"
+    ],
+    [
+      "http://18120.com/xinli/shxl/zyxl/xlwz/200803/121508.shtml",
+      "Path does not match pattern '.*sohu.com.*'"
+    ],
+    [
+      "http://182.92.164.168/classroom/5/thread/662",
+      "is_related='false'"
+    ],
+    [
+      "http://183.162.254.44:3692/blob/WebMetaSpace.git/358e8569be52958626a6244c70a0390cc1e9156c/WebMetaSpace%2FAssets%2FResPack%2FFont%2F3500.txt",
+      "is_related='false'"
+    ],
+    [
+      "http://183.214.211.146:28081/web/downFile.aspx?id=11301",
+      "Path does not match pattern '.*sohu.com.*'"
+    ],
+    [
+      "http://183.214.211.146:28081/web/downFile.aspx?id=26093",
+      "is_related='notsure'"
+    ],
+    [
+      "http://183.214.211.146:28081/web/downFile.aspx?id=325810",
+      "is_related='false'"
+    ],
+    [
+      "http://183.214.211.146:28081/web/downFile.aspx?id=365203",
+      "is_related='false'"
+    ],
+    [
+      "http://184.105.156.154/index.php/vod/detail/id/82024.html",
+      "Path does not match pattern '.*sohu.com.*'"
+    ],
+    [
+      "http://199.83.49.77/thread-36347-1-1.html",
+      "Path does not match pattern '.*sohu.com.*'"
+    ],
+    [
+      "http://202.114.89.108/openfile?dbid=72&objid=56_57_50_54_56&flag=free",
+      "is_related='false'"
+    ],
+    [
+      "http://202.116.174.104/institution/media?id=591c13031d41c83deff2ea4b&type=1",
+      "Path does not match pattern '.*sohu.com.*'"
+    ],
+    [
+      "http://202.195.136.150/openfile?dbid=72&objid=52_57_48_57_57_49&flag=free",
+      "Path does not match pattern '.*sohu.com.*'"
+    ],
+    [
+      "http://202.198.212.78/openfile?dbid=72&objid=48_52_53_52_49&flag=free",
+      "Path does not match pattern '.*sohu.com.*'"
+    ],
+    [
+      "http://202.198.212.78/openfile?dbid=72&objid=50_52_48_56&flag=free",
+      "is_related='false'"
+    ],
+    [
+      "http://209.141.35.7:8011/https/www.wenxuecity.com/news/2005/11/30/socialnews-10174.html",
+      "Link already processed"
+    ],
+    [
+      "http://209.141.35.7:8011/https/www.wenxuecity.com/news/2006/12/16/socialnews-18577.html",
+      "Link already processed"
+    ],
+    [
+      "http://209.141.35.7:8011/https/www.wenxuecity.com/news/2008/06/03/socialnews-31679.html",
+      "Path does not match pattern '.*sohu.com.*'"
+    ],
+    [
+      "http://209.141.35.7:8011/https/www.wenxuecity.com/news/2009/06/04/socialnews-45552.html",
+      "Path does not match pattern '.*sohu.com.*'"
+    ],
+    [
+      "http://209.141.35.7:8011/https/www.wenxuecity.com/news/2010/05/21/socialnews-61409.html",
+      "Link already processed"
+    ],
+    [
+      "http://211.103.209.164/news/show.aspx?id=7877",
+      "Link already processed"
+    ],
+    [
+      "http://211.67.182.139/KCMS/detail/detail.aspx?filename=FBZX202112010&dbcode=CJFD&dbname=CJFD2021",
+      "Path does not match pattern '.*sohu.com.*'"
+    ],
+    [
+      "http://211.67.182.139/KCMS/detail/detail.aspx?filename=XYXB201903013&dbcode=CJFD&dbname=CJFD2019",
+      "is_related='false'"
+    ],
+    [
+      "http://218.28.6.71:81/Qikan/Article/Detail?id=32524034",
+      "Path does not match pattern '.*sohu.com.*'"
+    ],
+    [
+      "http://218.28.6.71:81/Qikan/Article/Detail?id=669697841&from=Qikan_Article_Detail",
+      "Path does not match pattern '.*sohu.com.*'"
+    ],
+    [
+      "http://218.28.6.71:81/Qikan/Article/Detail?id=670351667&from=Qikan_Article_Detail",
+      "is_related='notsure'"
+    ],
+    [
+      "http://218.28.6.71:81/Qikan/Article/Detail?id=7100208730&from=Qikan_Article_Detail",
+      "is_related='notsure'"
+    ],
+    [
+      "http://218.28.6.71:81/Qikan/Article/Detail?id=7106652394&from=Qikan_Article_Detail",
+      "is_related='false'"
+    ],
+    [
+      "http://218.28.6.71:81/Qikan/Article/Detail?id=7107008082&from=Qikan_Article_Detail",
+      "is_related='false'"
+    ],
+    [
+      "http://218.28.6.71:81/Qikan/Article/Detail?id=8564920&from=Qikan_Article_Detail",
+      "Path does not match pattern '.*sohu.com.*'"
+    ],
+    [
+      "http://218.28.6.71:81/Qikan/Journal/Summary?kind=1&gch=96147X&y=1993&n=3&from=Qikan_Article_Detail",
+      "Path does not match pattern '.*sohu.com.*'"
+    ],
+    [
+      "http://218.30.67.99/wap/index.php?m=Article&a=show&id=8793",
+      "Path does not match pattern '.*sohu.com.*'"
+    ],
+    [
+      "http://219.217.72.37:8088/KCMS/detail/search.aspx?dbcode=CJFD&sfield=kw&skey=%E5%8F%98%E6%80%A7%E6%89%8B%E6%9C%AF",
+      "Path does not match pattern '.*sohu.com.*'"
+    ],
+    [
+      "http://220.180.135.13/forum/bin/ut/topic_show.cgi?id=1129365&pg=2&h=1&bpg=99&age=0",
+      "is_related='notsure'"
+    ],
+    [
+      "http://222.134.6.173:5000/KCMS/detail/detailall.aspx?filename=tura505.006&dbcode=CJFQ&dbname=CJFD1995",
+      "is_related='false'"
+    ],
+    [
+      "http://222.143.34.138:86/contents/176/24744.shtml",
+      "is_related='false'"
+    ],
+    [
+      "http://222.29.81.175/detail/article/5772b04bede4fe1a78982d69.html?q=%E6%80%A7%E5%88%AB%E8%A7%92%E8%89%B2&org=100000&uorg=999999",
+      "is_related='notsure'"
+    ],
+    [
+      "http://222.88.118.79:82/KCMS/detail/detail.aspx?filename=YXZX200708020&dbcode=CJFD&dbname=cjfd2007",
+      "Path does not match pattern '.*sohu.com.*'"
+    ],
+    [
+      "http://222.88.118.79:82/KCMS/detail/detailall.aspx?filename=jsyi199804010&dbcode=CJFD&dbname=CJFD1998",
+      "Path does not match pattern '.*sohu.com.*'"
+    ],
+    [
+      "http://281924.www.tiandayaxue.com/",
+      "is_related='false'"
+    ],
+    [
+      "http://2m4.kpp647.com/well-being/mental-health/",
+      "Path does not match pattern '.*sohu.com.*'"
+    ],
+    [
+      "http://2vcoalo.mlbsluggers.com/health/wellness-and-prevention/gender-affirmation-do-i-need-surgery",
+      "Path does not match pattern '.*sohu.com.*'"
+    ],
+    [
+      "http://3060tzh.org.cn/p/35275267.html",
+      "is_related='notsure'"
+    ],
+    [
+      "http://3060tzh.org.cn/p/54366933.html",
+      "Path does not match pattern '.*sohu.com.*'"
+    ],
+    [
+      "http://3060tzh.org.cn/play/208310.html",
+      "Path does not match pattern '.*sohu.com.*'"
+    ],
+    [
+      "http://360game.360.cn/article/content?id=64fee0bddbc1deaa850b6207",
+      "Path does not match pattern '.*sohu.com.*'"
+    ],
+    [
+      "http://360game.360.cn/article/content?id=66d557518b816d898e94fcef",
+      "is_related='notsure'"
+    ],
+    [
+      "http://38.239.211.185:8085/book/1848955034807894016/1848955453227466752.html",
+      "is_related='notsure'"
+    ],
+    [
+      "http://39.102.237.128/hzdataFiles/proxySiteFilePath/yearbook_item/FZ201700085_02/FZ201700085_02_0433.pdf",
+      "is_related='false'"
+    ],
+    [
+      "http://39.103.213.148:6060/Content-1410935.html",
+      "is_related='false'"
+    ],
+    [
+      "http://39.104.48.129/ktyj/gjzlkt/311.shtml",
+      "is_related='false'"
+    ],
+    [
+      "http://39.107.81.124/e/tags/index.php?tagname=%E5%88%86%E5%AD%90%E6%99%B6%E4%BD%93%E5%BB%B6%E5%B1%95%E6%80%A7&tempid=13&mid=1",
+      "is_related='false'"
+    ],
+    [
+      "http://3g.163.com/dy/article/BRFOR5JD051881SC.html",
+      "Link already processed"
+    ],
+    [
+      "http://3g.v.xywy.com/video/10526.htm",
+      "is_related='false'"
+    ],
+    [
+      "http://3g.v.xywy.com/video/11109.htm",
+      "Path does not match pattern '.*sohu.com.*'"
+    ],
+    [
+      "http://3g.xywy.com/xl/axx/jd/201505/07-760488.html",
+      "Path does not match pattern '.*sohu.com.*'"
+    ],
+    [
+      "http://3g.zhuanjia.xywy.com/doctor-89080.htm",
+      "is_related='false'"
+    ],
+    [
+      "http://45.152.67.175:81/book/nzdmd0e979c666a4d2a7e35ad61b4f54ae7a8",
+      "Path does not match pattern '.*sohu.com.*'"
+    ],
+    [
+      "http://45.152.67.175:81/chapter/89697",
+      "is_related='notsure'"
+    ],
+    [
+      "http://45.33.55.185/read-htm-tid-89995-uid-3377.html?tid=89995&uid=3377&skinco=wind",
+      "Path does not match pattern '.*sohu.com.*'"
+    ],
+    [
+      "http://45.33.55.185/simple/index.php?t89995.html",
+      "Path does not match pattern '.*sohu.com.*'"
+    ],
+    [
+      "http://47.101.133.160:8765/%E7%94%B5%E5%AD%90%E4%B9%A6/5000%E6%9C%AC%EF%BC%88%E7%BA%AF%E7%94%B5%E5%AD%90%E7%89%88%E9%9D%9E%E6%89%AB%E6%8F%8F%EF%BC%89/VOL195-200/%E5%86%99%E4%BD%9C%E6%98%AF%E9%97%A8%E6%89%8B%E8%89%BA/%E5%86%99%E4%BD%9C%E6%98%AF%E9%97%A8%E6%89%8B%E8%89%BA.txt",
+      "Path does not match pattern '.*sohu.com.*'"
+    ],
+    [
+      "http://47.104.87.41/app/home/productDetail/59f8748f2301945c3abaff2980dccc66",
+      "is_related='false'"
+    ],
+    [
+      "http://47.242.66.95/a/zcfg/2011/0104/241.html",
+      "Path does not match pattern '.*sohu.com.*'"
+    ],
+    [
+      "http://47.96.164.84/ljdb/pc/content/202005/27/content_90709.html",
+      "is_related='false'"
+    ],
+    [
+      "http://48i.laurenrankinart.com/departments/mental-health-services/lgbtqia-resources/",
+      "Path does not match pattern '.*sohu.com.*'"
+    ],
+    [
+      "http://4eyes.com.cn/news/526489cae4b0f11ceafb3ab7",
+      "is_related='false'"
+    ],
+    [
+      "http://4kyp.net/thread-48040-1-1.html",
+      "Path does not match pattern '.*sohu.com.*'"
+    ],
+    [
+      "http://4lyjk.www.weipinsc.com/",
+      "Path does not match pattern '.*sohu.com.*'"
+    ],
+    [
+      "http://51rumo.com/id=401600.txt",
+      "is_related='false'"
+    ],
+    [
+      "http://51rumo.com/m=home&wap=View&a=index&aid=494433.doc",
+      "Path does not match pattern '.*sohu.com.*'"
+    ],
+    [
+      "http://58.192.131.136/article/doi/10.3969/j.issn.1672-2353.2006.08.044",
+      "Path does not match pattern '.*sohu.com.*'"
+    ],
+    [
+      "http://58ziyuan.cn/news/116162/",
+      "Link already processed"
+    ],
+    [
+      "http://59.110.165.27/pdf/qnsd/qnsd202103/210305.pdf",
+      "is_related='false'"
+    ],
+    [
+      "http://59.175.169.166/cms/web/file/20240530/1717057966840095281.pdf",
+      "is_related='false'"
+    ],
+    [
+      "http://590ac.com/6433764/8.html",
+      "Path does not match pattern '.*sohu.com.*'"
+    ],
+    [
+      "http://590ac.com/6433764/9.html",
+      "Path does not match pattern '.*sohu.com.*'"
+    ],
+    [
+      "http://590ac.com/7398642/15.html",
+      "Path does not match pattern '.*sohu.com.*'"
+    ],
+    [
+      "http://5sing.kugou.com/16619698/zj/5226355931d06e1114e35c13.html",
+      "Path does not match pattern '.*sohu.com.*'"
+    ],
+    [
+      "http://61.167.104.185/NewCMS/upload/editor/file/f33f896e-7582-4bab-b829-deb418d3a54a/f33f896e-7582-4bab-b829-deb418d3a54a_f33f896e-7582-4bab-b829-deb418d3a54a.pdf",
+      "is_related='false'"
+    ],
+    [
+      "http://61.181.120.82:8080/kcms/detail/detail.aspx?filename=XBJX201601034&dbcode=CJFQ&dbname=CJFD2016",
+      "is_related='notsure'"
+    ],
+    [
+      "http://61.54.243.197:8089/kcms/detail/search.aspx?dbcode=CJFD&sfield=kw&skey=%E9%98%B4%E8%8C%8E%E8%83%8C%E5%8A%A8%E8%84%89",
+      "Path does not match pattern '.*sohu.com.*'"
+    ],
+    [
+      "http://66story.com/index.php/book/info/xingzhuanyishijiexingnu",
+      "is_related='notsure'"
+    ],
+    [
+      "http://67.211.72.146:20226/so/-----%E4%BE%AF%E6%B0%B8%E8%B4%A2--------.html",
+      "Path does not match pattern '.*sohu.com.*'"
+    ],
+    [
+      "http://6als.com/?/20241026115749/BWcBJQUm_851648242.html",
+      "Path does not match pattern '.*sohu.com.*'"
+    ],
+    [
+      "http://6als.com/?/20241027012132/BWdWcgIh_866770778.html",
+      "Path does not match pattern '.*sohu.com.*'"
+    ],
+    [
+      "http://6als.com/?/20241028064434/AGJRdVJx_383306684.html",
+      "Path does not match pattern '.*sohu.com.*'"
+    ],
+    [
+      "http://6als.com/?/20241028093238/B2VSdlJx_729458148.html",
+      "is_related='notsure'"
+    ],
+    [
+      "http://6als.com/?/20241028104858/AWMFIQck_932960676.html",
+      "is_related='notsure'"
+    ],
+    [
+      "http://6als.com/?/20241028134519/VjRaflZ1_729395098.html",
+      "Path does not match pattern '.*sohu.com.*'"
+    ],
+    [
+      "http://6als.com/?/20241028140245/B2VTd1t4_220529495.html",
+      "is_related='notsure'"
+    ],
+    [
+      "http://6als.com/?/20241028142039/UTNRdVd0_707850655.html",
+      "Path does not match pattern '.*sohu.com.*'"
+    ],
+    [
+      "http://6als.com/?/20241028173256/B2VUcAEi_601968279.html",
+      "Path does not match pattern '.*sohu.com.*'"
+    ],
+    [
+      "http://6als.com/?/591377843/VjRTdwck/%E5%8A%A8%E4%BD%9C---.html",
+      "is_related='notsure'"
+    ],
+    [
+      "http://78gamesacg.com/archives/30182",
+      "Path does not match pattern '.*sohu.com.*'"
+    ],
+    [
+      "http://7pb.com.cn/html/1609f67499165.html",
+      "Path does not match pattern '.*sohu.com.*'"
+    ],
+    [
+      "http://8.138.43.224:5678/%E7%94%B5%E5%AD%90%E4%B9%A6/5000%E6%9C%AC%EF%BC%88%E7%BA%AF%E7%94%B5%E5%AD%90%E7%89%88%E9%9D%9E%E6%89%AB%E6%8F%8F%EF%BC%89/VOL195-200/%E5%86%99%E4%BD%9C%E6%98%AF%E9%97%A8%E6%89%8B%E8%89%BA/%E5%86%99%E4%BD%9C%E6%98%AF%E9%97%A8%E6%89%8B%E8%89%BA.txt",
+      "is_related='notsure'"
+    ],
+    [
+      "http://81rc.81.cn/data/attachement/pdf/site330/20221008/183b6e8b4f510190240493.pdf",
+      "is_related='false'"
+    ],
+    [
+      "http://84918.com/hot/2024/31961.html",
+      "Path does not match pattern '.*sohu.com.*'"
+    ],
+    [
+      "http://91vrk.com/thread-8289-1-1.html",
+      "Path does not match pattern '.*sohu.com.*'"
+    ],
+    [
+      "http://9h4.huazhongpengye.com/cejs/sustainability-in-academics/sustainability-research/repository/posts/using-youth-engaged-methods-to-develop-a-technology-based-sexual-education-intervention-for-transgender-and-gender-expansive-youth.php",
+      "Path does not match pattern '.*sohu.com.*'"
+    ],
+    [
+      "http://9yz21.hannamotorsports.com/transgender-health-program/orchiectomy",
+      "Path does not match pattern '.*sohu.com.*'"
+    ],
+    [
+      "http://aastocks.com/sc/cnhk/news/china-hot-topic-content.aspx?id=IC4382143&catg=4&source=INFOCAST",
+      "is_related='false'"
+    ],
+    [
+      "http://abbr.dict.cn/CDTS/1",
+      "is_related='false'"
+    ],
+    [
+      "http://abbr.dict.cn/Centralized%20Digital%20Telecommunications%20System/CDTS",
+      "is_related='false'"
+    ],
+    [
+      "http://aclts.cn/Assets/userfiles/sys_c1e161d2-ee2f-4942-9430-a85600a5f478/files/%E4%B8%AD%E5%9B%BD%E6%96%87%E5%8C%96%E4%BC%A0%E6%92%AD/_%E5%90%8E%E7%90%86%E8%AE%BA%E6%97%B6%E4%BB%A3_%E7%9A%84%E5%90%8E%E4%BA%BA%E6%96%87%E7%A0%94%E7%A9%B6_%E5%85%BC%E8%AE%BA%E6%96%87%E5%AD%A6%E4%B8%8E%E6%9C%BA%E5%99%A8%E7%9A%84%E5%85%B3%E7%B3%BB_%E7%8E%8B%E5%AE%81.pdf",
+      "is_related='false'"
+    ],
+    [
+      "http://aclts.cn/Assets/userfiles/sys_eb538c1c-65ff-4e82-8e6a-a1ef01127fed/files/%E3%80%8A%E5%8D%95%E6%89%8B%E6%8E%8C%E5%A3%B0%E3%80%8B%E4%B8%AD%E7%9A%84%E8%B7%A8%E6%96%87%E5%8C%96%E8%AE%B0%E5%BF%86%E4%B8%8E%E7%A7%BB%E6%B0%91%E8%BA%AB%E4%BB%BD.pdf",
+      "is_related='notsure'"
+    ],
+    [
+      "http://aclts.cn/Assets/userfiles/sys_eb538c1c-65ff-4e82-8e6a-a1ef01127fed/files/%E6%AF%94%E8%BE%83%E6%96%87%E5%AD%A6%E7%9A%84%E8%B7%A8%E5%AD%A6%E7%A7%91%E7%A0%94%E7%A9%B6%EF%BC%9A%E5%8D%B1%E6%9C%BA%E5%92%8C%E5%87%BA%E8%B7%AF.pdf",
+      "is_related='notsure'"
+    ],
+    [
+      "http://aclts.cn/Assets/userfiles/sys_eb538c1c-65ff-4e82-8e6a-a1ef01127fed/files/%E6%AF%94%E8%BE%83%E6%96%87%E5%AD%A6%E7%A0%94%E7%A9%B6%E7%9A%84%E5%A4%9A%E5%85%83%E6%96%87%E5%8C%96%E8%A7%86%E8%A7%92%E2%80%94%E2%80%94%E4%BB%A5%E5%BA%93%E5%88%87%E3%80%8A%E7%AD%89%E5%BE%85%E9%87%8E%E8%9B%AE%E4%BA%BA%E3%80%8B%E6%96%87%E6%9C%AC%E9%98%85%E8%AF%BB%E4%B8%BA%E4%BE%8B.pdf",
+      "is_related='false'"
+    ],
+    [
+      "http://aclts.cn/Assets/userfiles/sys_eb538c1c-65ff-4e82-8e6a-a1ef01127fed/files/qikan/7-%E8%A2%81%E4%BD%B3%E9%A2%96.pdf",
+      "Link already processed"
+    ],
+    [
+      "http://aclts.cn/Assets/userfiles/sys_eb538c1c-65ff-4e82-8e6a-a1ef01127fed/files/qikan/9-%E8%96%9B%E5%8E%9F.pdf",
+      "Link already processed"
+    ],
+    [
+      "http://ae.ruc.edu.cn/docs/2022-03/c589abcbf5434beeab7082d25cfc8917.pdf",
+      "is_related='false'"
+    ],
+    [
+      "http://afsgkp.com/xingc_bofang/play/212966-1-1.html",
+      "Path does not match pattern '.*sohu.com.*'"
+    ],
+    [
+      "http://ageofqueer.com/category/news",
+      "is_related='notsure'"
+    ],
+    [
+      "http://ageofqueer.com/category/news/s_news",
+      "is_related='notsure'"
+    ],
+    [
+      "http://ago2010.org/Secondary-Schooling-(K-12)Jobs/12331902.html",
+      "is_related='false'"
+    ],
+    [
+      "http://ah.anhuinews.com/bb/ms/msxw/202410/t20241031_7963715.html",
+      "is_related='false'"
+    ],
+    [
+      "http://ah.anhuinews.com/bozhou/news/rw/202409/t20240909_7833000.html",
+      "is_related='false'"
+    ],
+    [
+      "http://ah.anhuinews.com/fy/sh/202410/t20241031_7964169.html",
+      "is_related='false'"
+    ],
+    [
+      "http://ah.anhuinews.com/la/fp/fpyw/202410/t20241030_7960922.html",
+      "is_related='false'"
+    ],
+    [
+      "http://ah.anhuinews.com/py/202304/t20230418_6801279.html",
+      "is_related='false'"
+    ],
+    [
+      "http://ah.anhuinews.com/szxw/202410/t20241029_7957047.html",
+      "is_related='false'"
+    ],
+    [
+      "http://ah.anhuinews.com/szxw/202411/t20241104_7972052.html",
+      "is_related='false'"
+    ],
+    [
+      "http://ah.anhuinews.com/szxw/202411/t20241104_7972085.html",
+      "is_related='false'"
+    ],
+    [
+      "http://ah.anhuinews.com/szxw/zy/202411/t20241117_8006418.html",
+      "is_related='false'"
+    ],
+    [
+      "http://ah.anhuinews.com/wh/news/202410/t20241030_7962492.html",
+      "is_related='false'"
+    ],
+    [
+      "http://ah.news.cn/20241117/840aac2629ff44fcb9b99aff6f468c7a/c.html",
+      "is_related='false'"
+    ],
+    [
+      "http://ah.people.com.cn/n2/2024/1029/c358324-41024119.html",
+      "is_related='false'"
+    ],
+    [
+      "http://ahndskxb.ahau.edu.cn/ahnydxxbsk/article/html/20070326",
+      "Path does not match pattern '.*sohu.com.*'"
+    ],
+    [
+      "http://ahndskxb.ahau.edu.cn/ahnydxxbsk/article/pdf/20020139?file_name=8101D5DAB1C08948C8B018C588C77FAB4A12DA43C2ABF4AC0C4ACCACD9025914A3325F7A3BF3A845C8B9C69878FF5D0A69A5747E6E0D615D7496AE048C9C674A&open_type=self",
+      "is_related='false'"
+    ],
+    [
+      "http://ahndskxb.ahau.edu.cn/ahnydxxbsk/article/pdf/20070326?file_name=8101D5DAB1C08948C8B018C588C77FAB4A12DA43C2ABF4AC0C4ACCACD9025914A3325F7A3BF3A845DDED7001E2726D8BD29CD2F325E0EF2CF7CDDBAF1BB1D6E7&open_type=self",
+      "Path does not match pattern '.*sohu.com.*'"
+    ],
+    [
+      "http://aimg8.dlszyht.net.cn/ueditor/file/841/1680940/1530869242527782.pdf",
+      "is_related='false'"
+    ],
+    [
+      "http://ainv.elesic.com/zhishi/33.html",
+      "is_related='false'"
+    ],
+    [
+      "http://alexmechlin.com/news/24e94199034.html",
+      "is_related='false'"
+    ],
+    [
+      "http://alkies.skyscrapernetwork.com/gender-sexuality-resource-center/resources/historical-figures.aspx",
+      "Path does not match pattern '.*sohu.com.*'"
+    ],
+    [
+      "http://alkwn.iowe.top/",
+      "is_related='notsure'"
+    ],
+    [
+      "http://alkwn.npx.ac.cn/html/068d94298989.html",
+      "is_related='false'"
+    ],
+    [
+      "http://alkwn.npx.ac.cn/html/623a5599321.html",
+      "Path does not match pattern '.*sohu.com.*'"
+    ],
+    [
+      "http://amnhactrungquoc.blogspot.com/2017/07/album-2011-test-cd-no4.html",
+      "is_related='false'"
+    ],
+    [
+      "http://amnhactrungquoc.blogspot.com/2017/07/album-2011-test-cd-no5.html",
+      "is_related='false'"
+    ],
+    [
+      "http://amnhactrungquoc.blogspot.com/2017/07/album-2015-test-cd-no27.html",
+      "is_related='false'"
+    ],
+    [
+      "http://amr.sz.gov.cn/gkmlpt/content/10/10477/post_10477714.html",
+      "is_related='false'"
+    ],
+    [
+      "http://amr.sz.gov.cn/xxgk/qt/ztlm/spaq/ypsyzs/content/post_8660562.html",
+      "is_related='false'"
+    ],
+    [
+      "http://amr.sz.gov.cn/xxgk/xwzx/tpxw/content/post_10477714.html",
+      "is_related='notsure'"
+    ],
+    [
+      "http://api.cqyc.net/wap/thread/view-thread/tid/2112799",
+      "Path does not match pattern '.*sohu.com.*'"
+    ],
+    [
+      "http://app.people.cn/h5/detail/normal/6034997589558272",
+      "is_related='false'"
+    ],
+    [
+      "http://app.sanyarb.com.cn/dsy_share/views/video/detail_000.html?contentType=9&contentId=109626&cId=0",
+      "is_related='false'"
+    ],
+    [
+      "http://app.shandong.gov.cn/attach/2016/19/245-1.pdf",
+      "is_related='false'"
+    ],
+    [
+      "http://app.tzuchi.com.tw/a_f/f_hl/atc/law/law-01.htm",
+      "is_related='false'"
+    ],
+    [
+      "http://app.why.com.cn/epaper/shzk/html/2012-08/21/content_79454.htm?div=-1",
+      "Path does not match pattern '.*sohu.com.*'"
+    ],
+    [
+      "http://app.why.com.cn/epaper/shzk/html/2012-10/23/content_95254.htm?div=-1",
+      "is_related='false'"
+    ],
+    [
+      "http://app.why.com.cn/epaper/shzk/html/2013-12/17/content_182823.htm?div=0",
+      "is_related='false'"
+    ],
+    [
+      "http://app.why.com.cn/epaper/shzk/html/2015-11/10/content_274272.htm?div=-1",
+      "is_related='false'"
+    ],
+    [
+      "http://app.why.com.cn/epaper/shzk/images/2014-01/07/A06/A06.pdf",
+      "is_related='false'"
+    ],
+    [
+      "http://app.why.com.cn/epaper/webpc/shzk/images/2018-12/04/A18/20181204A18_pdf.pdf",
+      "is_related='notsure'"
+    ],
+    [
+      "http://app.why.com.cn/epaper/xsdb/images/2012-04/23/B12/ZZ12423Q.pdf",
+      "is_related='false'"
+    ],
+    [
+      "http://app.www.gov.cn/govdata/gov/201612/31/396115/article.html",
+      "is_related='notsure'"
+    ],
+    [
+      "http://archive.keyllo.com/W-%E5%B0%8F%E8%AF%B4/%E7%8E%8B%E6%9C%94/%E5%8D%83%E4%B8%87%E5%88%AB%E6%8A%8A%E6%88%91%E5%BD%93%E4%BA%BA.txt",
+      "Path does not match pattern '.*sohu.com.*'"
+    ],
+    [
+      "http://archive.keyllo.com/W-%E8%AF%97%E6%AD%8C/%E5%8F%A4%E5%85%B8%E8%AF%97%E8%AF%8D-%E4%B8%AD%E5%8D%8E%E8%AF%97%E8%AF%8D%E5%90%8D%E5%8F%A5%E9%89%B4%E8%B5%8F%EF%BC%88%E7%9B%9B%E5%BA%86%E6%96%8C%EF%BC%89.txt",
+      "is_related='false'"
+    ],
+    [
+      "http://archives.cnd.org/HXWK/author/LI-Dao/lidao.gb.txt",
+      "is_related='false'"
+    ],
+    [
+      "http://archives.cnd.org/HXWK/author/TAO-Li/cm0008d-6.gb.html",
+      "Path does not match pattern '.*sohu.com.*'"
+    ],
+    [
+      "http://archives.cnd.org/HXWK/column/Travel/kd040308-3.gb.html",
+      "Path does not match pattern '.*sohu.com.*'"
+    ],
+    [
+      "http://arps.org/play/?2uzDU3.edu.cn",
+      "is_related='notsure'"
+    ],
+    [
+      "http://art-ba-ba.com/main/view.art?menu=Previous&forumId=8&threadId=5707",
+      "Path does not match pattern '.*sohu.com.*'"
+    ],
+    [
+      "http://art.caanett.com/voddetail/30364511.html",
+      "is_related='notsure'"
+    ],
+    [
+      "http://art.china.cn/music/2010-05/07/content_3500155.htm",
+      "Path does not match pattern '.*sohu.com.*'"
+    ],
+    [
+      "http://art.china.cn/shishang/2008-01/24/content_2026736.htm",
+      "is_related='false'"
+    ],
+    [
+      "http://art.china.cn/tslz/2012-05/31/content_5051840_2.htm",
+      "Path does not match pattern '.*sohu.com.*'"
+    ],
+    [
+      "http://art.ncu.edu.tw/artConf/main/public/10/%E5%8D%81%E4%B8%89_%E7%B4%80%E5%AD%9F%E5%9D%87_.pdf",
+      "Path does not match pattern '.*sohu.com.*'"
+    ],
+    [
+      "http://art.people.com.cn/n/2013/0628/c226026-22007042.html",
+      "Path does not match pattern '.*sohu.com.*'"
+    ],
+    [
+      "http://art.web-32.com/Article_Comments.asp?id=1651824",
+      "Path does not match pattern '.*sohu.com.*'"
+    ],
+    [
+      "http://art1.china.cn/shishang/2008-07/21/content_2360796_4.htm",
+      "is_related='false'"
+    ],
+    [
+      "http://arts.cntv.cn/2014/09/03/ARTI1409733083961120_2.shtml",
+      "is_related='false'"
+    ]
+  ]
+}
