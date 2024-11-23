@@ -44,7 +44,7 @@ ifeng.com: raw/ifeng.com/page.yml
 	python scripts/batch.py  raw/ifeng.com/ cleaned/ifeng.com/ ./scripts/cleaner/clean_cheerio.js HTML_CLEANER_CONFIG=./scripts/cleaner/configs/ifeng.com.json 
 	python scripts/batch.py  cleaned/ifeng.com/ markdown/ifeng.com/ scripts/markdown/html2md.js
 
-	python scripts/ai/process_dir.py markdown/ifeng.com/ ready/ifeng.com/ scripts/ai/prompt/clean.template
+	python scripts/ai/process_dir.py markdown/ifeng.com/ ready/ifeng.com/ scripts/ai/prompt/clean.template  --skip-size-check
 
 .PHONY: sina.cn
 sina.cn: raw/sina.cn/page.yml
@@ -52,7 +52,7 @@ sina.cn: raw/sina.cn/page.yml
 	python scripts/batch.py  raw/sina.cn/ cleaned/sina.cn/ ./scripts/cleaner/clean_cheerio.js HTML_CLEANER_CONFIG=./scripts/cleaner/configs/sina.cn.json 
 	python scripts/batch.py  cleaned/sina.cn/ markdown/sina.cn/ scripts/markdown/html2md.js
 
-	python scripts/ai/process_dir.py markdown/sina.cn/ ready/sina.cn/ scripts/ai/prompt/clean.template
+	python scripts/ai/process_dir.py markdown/sina.cn/ ready/sina.cn/ scripts/ai/prompt/clean.template  --skip-size-check
 
 .PHONY: thepaper.cn
 thepaper.cn: raw/thepaper.cn/page.yml
@@ -68,7 +68,7 @@ sohu.com: raw/sohu.com/page.yml
 	python scripts/batch.py  raw/sohu.com/ cleaned/sohu.com/ ./scripts/cleaner/clean_cheerio.js HTML_CLEANER_CONFIG=./scripts/cleaner/configs/sohu.com.json 
 	python scripts/batch.py  cleaned/sohu.com/ markdown/sohu.com/ scripts/markdown/html2md.js
 
-	python scripts/ai/process_dir.py markdown/sohu.com/ ready/sohu.com/ scripts/ai/prompt/clean.template
+	python scripts/ai/process_dir.py markdown/sohu.com/ ready/sohu.com/ scripts/ai/prompt/clean.template  --skip-size-check
 
 .PHONY: chinanews.com
 chinanews.com: raw/chinanews.com/page.yml
@@ -83,7 +83,7 @@ chinanews.com: raw/chinanews.com/page.yml
 	python scripts/batch.py  raw/163.com/ cleaned/163.com/ ./scripts/cleaner/clean_cheerio.js HTML_CLEANER_CONFIG=./scripts/cleaner/configs/163.com.json 
 	python scripts/batch.py  cleaned/163.com/ markdown/163.com/ scripts/markdown/html2md.js
 
-	python scripts/ai/process_dir.py markdown/163.com/ ready/163.com/ scripts/ai/prompt/clean.template
+	python scripts/ai/process_dir.py markdown/163.com/ ready/163.com/ scripts/ai/prompt/clean.template  --skip-size-check
 
 .PHONY: news.qq.com
 news.qq.com: raw/news.qq.com/page.yml
