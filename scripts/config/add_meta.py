@@ -52,7 +52,7 @@ def merge_visit_data(visit_links_path, config_path, output_path):
 
 def main():
     parser = argparse.ArgumentParser(description='Merge visit_links data into config.yml')
-    parser.add_argument('--visit-links', default='../.github/visit_links.yml',
+    parser.add_argument('--visit-links', default='../../visit_links.yml',
                       help='Path to visit_links.yml file')
     parser.add_argument('config', 
                       help='Path to input config.yml file')

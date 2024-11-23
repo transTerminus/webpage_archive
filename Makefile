@@ -1,11 +1,13 @@
 raw/ifeng.com/page.yml:
 	python scripts/config/old_config.py raw/ifeng.com/results.json raw/ifeng.com/page.yml
 	python scripts/config/new_config.py raw/ifeng.com/results1.json raw/ifeng.com/page.yml
+	python scripts/config/new_config.py raw/ifeng.com/results2.json raw/ifeng.com/page.yml
 	python scripts/config/add_meta.py raw/ifeng.com/page.yml
 
 raw/sina.cn/page.yml:
 	python scripts/config/old_config.py raw/sina.cn/results.json raw/sina.cn/page.yml
 	python scripts/config/new_config.py raw/sina.cn/results1.json raw/sina.cn/page.yml
+	python scripts/config/new_config.py raw/sina.cn/results2.json raw/sina.cn/page.yml
 	python scripts/config/add_meta.py raw/sina.cn/page.yml
 
 raw/thepaper.cn/page.yml:
@@ -16,6 +18,7 @@ raw/thepaper.cn/page.yml:
 raw/sohu.com/page.yml:
 	python scripts/config/new_config.py raw/sohu.com/results.json raw/sohu.com/page.yml
 	python scripts/config/new_config.py raw/sohu.com/results1.json raw/sohu.com/page.yml
+	python scripts/config/new_config.py raw/sohu.com/results2.json raw/sohu.com/page.yml
 	python scripts/config/add_meta.py raw/sohu.com/page.yml
 
 raw/chinanews.com/page.yml:
@@ -24,6 +27,7 @@ raw/chinanews.com/page.yml:
 
 raw/163.com/page.yml:
 	python scripts/config/new_config.py raw/163.com/results.json raw/163.com/page.yml
+	python scripts/config/new_config.py raw/163.com/results1.json raw/163.com/page.yml
 	python scripts/config/add_meta.py raw/163.com/page.yml
 
 raw/news.qq.com/page.yml:
